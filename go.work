@@ -1,0 +1,20 @@
+go 1.25.0
+
+use (
+	./clients
+	./config
+	./core
+	./messaging
+	./middleware
+	./observability
+	./orchestration
+	./persistence
+	./platform
+	./plugins
+	./ratelimit
+	./resilience
+	./runtime
+	./security
+	./tools
+	./validation
+)

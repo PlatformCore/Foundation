@@ -1,0 +1,11 @@
+﻿{
+    "github.com/driftappdev":  "v0.1.1",
+    "github.com/PlatformCore/Foundation/messaging/dlq":  "v0.1.1",
+    "github.com/PlatformCore/Foundation/messaging/inbox":  "v0.1.1",
+    "github.com/PlatformCore/Foundation/messaging/outbox":  "v0.1.1",
+    "github.com/PlatformCore/Foundation/messaging/redrive":  "v0.1.1",
+    "github.com/PlatformCore/Foundation/messaging/replay":  "v0.1.1",
+    "github.com/PlatformCore/Foundation/persistence/tx":  "v0.1.1",
+    "github.com/PlatformCore/Foundation/persistence/uow":  "v0.1.1"
+}
+

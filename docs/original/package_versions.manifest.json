@@ -1,0 +1,996 @@
+﻿{
+    "updated_at":  "2026-04-28",
+    "repository":  "libpackage",
+    "version_policy":  {
+                           "stable":  "v1.0.0",
+                           "internal":  "v0.1.0"
+                       },
+    "status_policy":  {
+                          "stable":  "production-ready and backward-compatible",
+                          "beta":  "active development; minor breaking changes possible",
+                          "deprecated":  "do not use for new integrations; migration recommended"
+                      },
+    "modules":  [
+                    {
+                        "path":  "compat/goauth",
+                        "module":  "github.com/PlatformCore/Foundation/security/auth_middleware/goauth",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/gocircuit",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/circuitbreaker/gocircuit",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/goerror",
+                        "module":  "github.com/PlatformCore/Foundation/core/errors/goerror_compat",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/gologger",
+                        "module":  "github.com/PlatformCore/Foundation/observability/logging/gologger",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/gometrics",
+                        "module":  "github.com/PlatformCore/Foundation/observability/gometrics",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/goratelimit",
+                        "module":  "github.com/PlatformCore/Foundation/ratelimit/compat/goratelimit",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  6,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/goretry",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/retry/goretry",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/gosanitizer",
+                        "module":  "github.com/PlatformCore/Foundation/security/sanitizer/gosanitizer",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/gotimeout",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/timeout/gotimeout",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "compat/gotracing",
+                        "module":  "github.com/PlatformCore/Foundation/observability/tracing/gotracing",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/client",
+                        "module":  "github.com/PlatformCore/Foundation/clients",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/config",
+                        "module":  "github.com/PlatformCore/Foundation/config",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/contracts",
+                        "module":  "github.com/PlatformCore/Foundation/core/contracts",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/core",
+                        "module":  "github.com/PlatformCore/Foundation/core",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/result",
+                        "module":  "github.com/PlatformCore/Foundation/core/result_legacy",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/runtime",
+                        "module":  "github.com/PlatformCore/Foundation/runtime",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/schema",
+                        "module":  "github.com/PlatformCore/Foundation/core/schema",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/validator/binding",
+                        "module":  "github.com/PlatformCore/Foundation/validation/binding",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  2,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "foundation/validator/schema",
+                        "module":  "github.com/PlatformCore/Foundation/validation/schema",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  3,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/audit",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/audit",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/dlq",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/dlq",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/example_integration",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/example_integration",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/idempotency",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/idempotency",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/inbox",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/inbox",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/outbox",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/outbox",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/redrive",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/redrive",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "messaging/replay",
+                        "module":  "github.com/PlatformCore/Foundation/messaging/replay",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  6,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/clock",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/clock",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/event",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/event",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/ids",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/ids",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/logging",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/logging",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/pool",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/pool",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/propagation",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/propagation",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/registry",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/registry",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "middleware/trace",
+                        "module":  "github.com/PlatformCore/Foundation/middleware/trace",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/audit",
+                        "module":  "github.com/PlatformCore/Foundation/observability/audit",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/correlation",
+                        "module":  "github.com/PlatformCore/Foundation/observability/correlation",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability",
+                        "module":  "github.com/driftappdev/observability",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/healthcheck",
+                        "module":  "github.com/PlatformCore/Foundation/observability/healthcheck",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  3,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/logging",
+                        "module":  "github.com/PlatformCore/Foundation/observability/logging",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  3,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/metrics",
+                        "module":  "github.com/PlatformCore/Foundation/observability/metrics/basic",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  2,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/metrics/registry",
+                        "module":  "github.com/PlatformCore/Foundation/observability/metrics/basic/registry",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/performance",
+                        "module":  "github.com/PlatformCore/Foundation/observability/performance",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/profiler",
+                        "module":  "github.com/PlatformCore/Foundation/observability/profiler",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  2,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/sentinelprofiler",
+                        "module":  "github.com/PlatformCore/Foundation/observability/profiler/sentinel",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/span",
+                        "module":  "github.com/PlatformCore/Foundation/observability/span",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/telemetry/baggage",
+                        "module":  "github.com/PlatformCore/Foundation/observability/telemetry/baggage",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/telemetry/correlation",
+                        "module":  "github.com/PlatformCore/Foundation/observability/telemetry/correlation",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/telemetry/trace",
+                        "module":  "github.com/PlatformCore/Foundation/observability/telemetry/trace",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "observability/tracing",
+                        "module":  "github.com/PlatformCore/Foundation/observability/tracing",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  4,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "orchestration/di",
+                        "module":  "github.com/PlatformCore/Foundation/orchestration/di",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "orchestration/workflow",
+                        "module":  "github.com/PlatformCore/Foundation/orchestration/workflow",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "persistence/distlock",
+                        "module":  "github.com/PlatformCore/Foundation/persistence/distlock",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "persistence/tx",
+                        "module":  "github.com/PlatformCore/Foundation/persistence/tx",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "persistence/uow",
+                        "module":  "github.com/PlatformCore/Foundation/persistence/uow",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "platform/client",
+                        "module":  "github.com/PlatformCore/Foundation/clients/platform",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "platform/container",
+                        "module":  "github.com/PlatformCore/Foundation/platform/container",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "platform/evaluator",
+                        "module":  "github.com/PlatformCore/Foundation/platform/evaluator",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "platform/eventbus",
+                        "module":  "github.com/PlatformCore/Foundation/platform/eventbus",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "platform/featureflag",
+                        "module":  "github.com/PlatformCore/Foundation/platform/featureflag",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "platform/servicemesh",
+                        "module":  "github.com/PlatformCore/Foundation/platform/servicemesh",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "platform/versioning",
+                        "module":  "github.com/PlatformCore/Foundation/platform/versioning",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins/common",
+                        "module":  "github.com/PlatformCore/Foundation/plugins/common",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins/engine",
+                        "module":  "github.com/PlatformCore/Foundation/plugins/engine",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins",
+                        "module":  "github.com/PlatformCore/Foundation/plugins",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins/hooks",
+                        "module":  "github.com/PlatformCore/Foundation/plugins/hooks",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins/loader",
+                        "module":  "github.com/PlatformCore/Foundation/plugins/loader",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins/manifest",
+                        "module":  "github.com/PlatformCore/Foundation/plugins/manifest",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins/provider",
+                        "module":  "github.com/PlatformCore/Foundation/plugins/provider",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "plugins/registry",
+                        "module":  "github.com/PlatformCore/Foundation/plugins/registry",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "ratelimit",
+                        "module":  "github.com/PlatformCore/Foundation/ratelimit",
+                        "go":  "1.25.1",
+                        "package_version":  "v1.0.0",
+                        "go_files":  3,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "stable"
+                    },
+                    {
+                        "path":  "resilience/adaptive_concurrency",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/adaptive_concurrency",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/adaptive_retry",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/adaptive_retry",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/backpressure",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/backpressure",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/batcher",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/batcher",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/bulkhead",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/bulkhead",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/cache_stampede_protection",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/cache_stampede_protection",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/checkpoint",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/checkpoint",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/congestion_control",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/congestion_control",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/deadline",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/deadline",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/distributed_rate_limit",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/distributed_rate_limit",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience",
+                        "module":  "github.com/PlatformCore/Foundation/resilience",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/health_supervisor",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/health_supervisor",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/hedged_request",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/hedged_request",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/limiter",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/limiter",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/load_shedder",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/load_shedder",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/priority_queue",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/priority_queue",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/quorum",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/quorum",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/request_coalescing",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/request_coalescing",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/retry_backoff",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/retry_backoff",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/shadow_traffic",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/shadow_traffic",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/state_synchronizer",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/state_synchronizer",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/token_bucket",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/token_bucket",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/traffic_mirroring",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/traffic_mirroring",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/validator",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/validator",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "resilience/workqueue",
+                        "module":  "github.com/PlatformCore/Foundation/resilience/workqueue",
+                        "go":  "1.25.1",
+                        "package_version":  "v0.1.0",
+                        "go_files":  1,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    },
+                    {
+                        "path":  "security",
+                        "module":  "github.com/PlatformCore/Foundation/security",
+                        "go":  "1.25.1",
+                        "package_version":  "v1.0.0",
+                        "go_files":  2,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "stable"
+                    },
+                    {
+                        "path":  "tools/lib_word",
+                        "module":  "github.com/PlatformCore/Foundation/tools/lib_word",
+                        "go":  "1.25.0",
+                        "package_version":  "v0.1.0",
+                        "go_files":  0,
+                        "purpose":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "suitable_for":  "See PACKAGE_SUMMARY_AND_VERSIONS.md",
+                        "status":  "beta"
+                    }
+                ]
+}
+
