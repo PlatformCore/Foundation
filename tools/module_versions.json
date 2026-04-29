@@ -2,6 +2,7 @@
   "repository": "github.com/PlatformCore/Foundation",
   "updated_at": "2026-04-29",
   "modules": [
+    { "name": "compat", "path": "compat", "version": "v0.1.0" },
     { "name": "clients", "path": "clients", "version": "v0.1.0" },
     { "name": "config", "path": "config", "version": "v0.1.0" },
     { "name": "core", "path": "core", "version": "v0.1.0" },

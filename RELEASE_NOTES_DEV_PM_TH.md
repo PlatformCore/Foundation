@@ -12,6 +12,7 @@
 ## เวอร์ชันโมดูล (รอบนี้)
 | โมดูล | Path | Version | สถานะ | เหมาะสำหรับ |
 |---|---|---|---|---|
+| compat | `compat` | v0.1.0 | stable | เลเยอร์ compatibility สำหรับ tracing/retry/auth/error/logger/metrics/ratelimit/circuit |
 | clients | `clients` | v0.1.0 | stable | HTTP/gRPC/NATS client layer |
 | config | `config` | v0.1.0 | stable | config loading/env/file/watcher |
 | core | `core` | v0.1.0 | stable | contracts/types/errors/logger พื้นฐาน |
