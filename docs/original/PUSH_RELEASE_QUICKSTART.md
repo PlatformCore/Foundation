@@ -21,5 +21,5 @@ powershell -ExecutionPolicy Bypass -File scripts/release_all_from_matrix.ps1 -Ma
 
 ## 4) Install module separately
 ```bash
-go get github.com/PlatformCore/Foundation/platform/eventbus@v0.2.0
+go get github.com/PlatformCore/libpackage/platform/eventbus@v0.2.0
 ```

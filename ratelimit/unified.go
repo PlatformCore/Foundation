@@ -3,9 +3,9 @@ package ratelimit
 import (
 	"time"
 
-	legacy "github.com/PlatformCore/Foundation/ratelimit/legacy"
-	ent "github.com/PlatformCore/Foundation/ratelimit/enterprise"
-	base "github.com/PlatformCore/Foundation/ratelimit/limiter"
+	legacy "github.com/PlatformCore/libpackage/ratelimit/legacy"
+	ent "github.com/PlatformCore/libpackage/ratelimit/enterprise"
+	base "github.com/PlatformCore/libpackage/ratelimit/limiter"
 )
 
 // Unified exposes one entrypoint for core, enterprise, and legacy limiter stacks.

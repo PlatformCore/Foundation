@@ -1,4 +1,4 @@
-﻿# Enterprise Completion Report
+# Enterprise Completion Report
 
 Generated for PlatformCore/libpackage.
 
@@ -9,7 +9,7 @@ Generated for PlatformCore/libpackage.
 - Files were reorganized into enterprise package groups.
 - Active modules were consolidated into top-level enterprise modules.
 - Original nested go.mod/go.sum files were preserved under `_module_backup/original_go_mods/`.
-- Import paths that referenced old `github.com/driftappdev/...` modules were rewritten to `github.com/PlatformCore/Foundation/...`.
+- Import paths that referenced old `github.com/driftappdev/...` modules were rewritten to `github.com/PlatformCore/libpackage/...`.
 
 ## Counts
 
@@ -20,22 +20,22 @@ Generated for PlatformCore/libpackage.
 
 ## Active modules
 
-- `core/go.mod` -> `github.com/PlatformCore/Foundation/core`
-- `config/go.mod` -> `github.com/PlatformCore/Foundation/config`
-- `runtime/go.mod` -> `github.com/PlatformCore/Foundation/runtime`
-- `clients/go.mod` -> `github.com/PlatformCore/Foundation/clients`
-- `security/go.mod` -> `github.com/PlatformCore/Foundation/security`
-- `resilience/go.mod` -> `github.com/PlatformCore/Foundation/resilience`
-- `ratelimit/go.mod` -> `github.com/PlatformCore/Foundation/ratelimit`
-- `plugins/go.mod` -> `github.com/PlatformCore/Foundation/plugins`
-- `tools/go.mod` -> `github.com/PlatformCore/Foundation/tools`
-- `orchestration/go.mod` -> `github.com/PlatformCore/Foundation/orchestration`
-- `platform/go.mod` -> `github.com/PlatformCore/Foundation/platform`
-- `messaging/go.mod` -> `github.com/PlatformCore/Foundation/messaging`
-- `persistence/go.mod` -> `github.com/PlatformCore/Foundation/persistence`
-- `middleware/go.mod` -> `github.com/PlatformCore/Foundation/middleware`
-- `observability/go.mod` -> `github.com/PlatformCore/Foundation/observability`
-- `validation/go.mod` -> `github.com/PlatformCore/Foundation/validation`
+- `core/go.mod` -> `github.com/PlatformCore/libpackage/core`
+- `config/go.mod` -> `github.com/PlatformCore/libpackage/config`
+- `runtime/go.mod` -> `github.com/PlatformCore/libpackage/runtime`
+- `clients/go.mod` -> `github.com/PlatformCore/libpackage/clients`
+- `security/go.mod` -> `github.com/PlatformCore/libpackage/security`
+- `resilience/go.mod` -> `github.com/PlatformCore/libpackage/resilience`
+- `ratelimit/go.mod` -> `github.com/PlatformCore/libpackage/ratelimit`
+- `plugins/go.mod` -> `github.com/PlatformCore/libpackage/plugins`
+- `tools/go.mod` -> `github.com/PlatformCore/libpackage/tools`
+- `orchestration/go.mod` -> `github.com/PlatformCore/libpackage/orchestration`
+- `platform/go.mod` -> `github.com/PlatformCore/libpackage/platform`
+- `messaging/go.mod` -> `github.com/PlatformCore/libpackage/messaging`
+- `persistence/go.mod` -> `github.com/PlatformCore/libpackage/persistence`
+- `middleware/go.mod` -> `github.com/PlatformCore/libpackage/middleware`
+- `observability/go.mod` -> `github.com/PlatformCore/libpackage/observability`
+- `validation/go.mod` -> `github.com/PlatformCore/libpackage/validation`
 
 ## Important note
 

@@ -7,7 +7,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/PlatformCore/Foundation/middleware/nethttp"
+	"github.com/PlatformCore/libpackage/middleware/nethttp"
 )
 
 // ExampleNew demonstrates assembling a full enterprise middleware chain.

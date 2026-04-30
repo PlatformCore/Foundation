@@ -16,9 +16,9 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/PlatformCore/Foundation/middleware/ids"
-	"github.com/PlatformCore/Foundation/middleware/propagation"
-	obttrace "github.com/PlatformCore/Foundation/middleware/trace"
+	"github.com/PlatformCore/libpackage/middleware/ids"
+	"github.com/PlatformCore/libpackage/middleware/propagation"
+	obttrace "github.com/PlatformCore/libpackage/middleware/trace"
 )
 
 // ─── Metrics ──────────────────────────────────────────────────────────────────

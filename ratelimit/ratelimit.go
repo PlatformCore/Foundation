@@ -1,6 +1,6 @@
 package ratelimit
 
-import base "github.com/PlatformCore/Foundation/ratelimit/limiter"
+import base "github.com/PlatformCore/libpackage/ratelimit/limiter"
 
 type Strategy = base.Strategy
 

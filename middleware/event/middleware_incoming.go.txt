@@ -1,4 +1,4 @@
-﻿// Package event provides enterprise middleware for event-driven systems
+// Package event provides enterprise middleware for event-driven systems
 // (Kafka, NATS, RabbitMQ, Google Pub/Sub, AWS SQS, etc.).
 // It handles ID extraction from message headers, trace context propagation,
 // structured logging, metrics, and retry/dead-letter-queue instrumentation.
@@ -13,9 +13,9 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.uber.org/zap"
 
-	"github.com/PlatformCore/Foundation/middleware/ids"
-	"github.com/PlatformCore/Foundation/middleware/propagation"
-	obttrace "github.com/PlatformCore/Foundation/middleware/trace"
+	"github.com/PlatformCore/libpackage/middleware/ids"
+	"github.com/PlatformCore/libpackage/middleware/propagation"
+	obttrace "github.com/PlatformCore/libpackage/middleware/trace"
 )
 
 // ─── Message ─────────────────────────────────────────────────────────────────

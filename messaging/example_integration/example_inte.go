@@ -10,10 +10,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/PlatformCore/Foundation/messaging/dlq"
-	"github.com/PlatformCore/Foundation/messaging/inbox"
-	"github.com/PlatformCore/Foundation/messaging/outbox"
-	"github.com/PlatformCore/Foundation/messaging/redrive"
+	"github.com/PlatformCore/libpackage/messaging/dlq"
+	"github.com/PlatformCore/libpackage/messaging/inbox"
+	"github.com/PlatformCore/libpackage/messaging/outbox"
+	"github.com/PlatformCore/libpackage/messaging/redrive"
 )
 
 type SlogAdapter struct{ l *slog.Logger }

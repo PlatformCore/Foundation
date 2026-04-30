@@ -1,3 +1,3 @@
-module github.com/PlatformCore/Foundation/runtime
+module github.com/PlatformCore/libpackage/runtime
 
 go 1.23.0

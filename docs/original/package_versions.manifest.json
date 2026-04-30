@@ -13,7 +13,7 @@
     "modules":  [
                     {
                         "path":  "compat/goauth",
-                        "module":  "github.com/PlatformCore/Foundation/security/auth_middleware/goauth",
+                        "module":  "github.com/PlatformCore/libpackage/security/auth_middleware/goauth",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -23,7 +23,7 @@
                     },
                     {
                         "path":  "compat/gocircuit",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/circuitbreaker/gocircuit",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/circuitbreaker/gocircuit",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -33,7 +33,7 @@
                     },
                     {
                         "path":  "compat/goerror",
-                        "module":  "github.com/PlatformCore/Foundation/core/errors/goerror_compat",
+                        "module":  "github.com/PlatformCore/libpackage/core/errors/goerror_compat",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -43,7 +43,7 @@
                     },
                     {
                         "path":  "compat/gologger",
-                        "module":  "github.com/PlatformCore/Foundation/observability/logging/gologger",
+                        "module":  "github.com/PlatformCore/libpackage/observability/logging/gologger",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -53,7 +53,7 @@
                     },
                     {
                         "path":  "compat/gometrics",
-                        "module":  "github.com/PlatformCore/Foundation/observability/gometrics",
+                        "module":  "github.com/PlatformCore/libpackage/observability/gometrics",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -63,7 +63,7 @@
                     },
                     {
                         "path":  "compat/goratelimit",
-                        "module":  "github.com/PlatformCore/Foundation/ratelimit/compat/goratelimit",
+                        "module":  "github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  6,
@@ -73,7 +73,7 @@
                     },
                     {
                         "path":  "compat/goretry",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/retry/goretry",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/retry/goretry",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -83,7 +83,7 @@
                     },
                     {
                         "path":  "compat/gosanitizer",
-                        "module":  "github.com/PlatformCore/Foundation/security/sanitizer/gosanitizer",
+                        "module":  "github.com/PlatformCore/libpackage/security/sanitizer/gosanitizer",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -93,7 +93,7 @@
                     },
                     {
                         "path":  "compat/gotimeout",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/timeout/gotimeout",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/timeout/gotimeout",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -103,7 +103,7 @@
                     },
                     {
                         "path":  "compat/gotracing",
-                        "module":  "github.com/PlatformCore/Foundation/observability/tracing/gotracing",
+                        "module":  "github.com/PlatformCore/libpackage/observability/tracing/gotracing",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -113,7 +113,7 @@
                     },
                     {
                         "path":  "foundation/client",
-                        "module":  "github.com/PlatformCore/Foundation/clients",
+                        "module":  "github.com/PlatformCore/libpackage/clients",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -123,7 +123,7 @@
                     },
                     {
                         "path":  "foundation/config",
-                        "module":  "github.com/PlatformCore/Foundation/config",
+                        "module":  "github.com/PlatformCore/libpackage/config",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -133,7 +133,7 @@
                     },
                     {
                         "path":  "foundation/contracts",
-                        "module":  "github.com/PlatformCore/Foundation/core/contracts",
+                        "module":  "github.com/PlatformCore/libpackage/core/contracts",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -143,7 +143,7 @@
                     },
                     {
                         "path":  "foundation/core",
-                        "module":  "github.com/PlatformCore/Foundation/core",
+                        "module":  "github.com/PlatformCore/libpackage/core",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -153,7 +153,7 @@
                     },
                     {
                         "path":  "foundation/result",
-                        "module":  "github.com/PlatformCore/Foundation/core/result_legacy",
+                        "module":  "github.com/PlatformCore/libpackage/core/result_legacy",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -163,7 +163,7 @@
                     },
                     {
                         "path":  "foundation/runtime",
-                        "module":  "github.com/PlatformCore/Foundation/runtime",
+                        "module":  "github.com/PlatformCore/libpackage/runtime",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -173,7 +173,7 @@
                     },
                     {
                         "path":  "foundation/schema",
-                        "module":  "github.com/PlatformCore/Foundation/core/schema",
+                        "module":  "github.com/PlatformCore/libpackage/core/schema",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -183,7 +183,7 @@
                     },
                     {
                         "path":  "foundation/validator/binding",
-                        "module":  "github.com/PlatformCore/Foundation/validation/binding",
+                        "module":  "github.com/PlatformCore/libpackage/validation/binding",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  2,
@@ -193,7 +193,7 @@
                     },
                     {
                         "path":  "foundation/validator/schema",
-                        "module":  "github.com/PlatformCore/Foundation/validation/schema",
+                        "module":  "github.com/PlatformCore/libpackage/validation/schema",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  3,
@@ -203,7 +203,7 @@
                     },
                     {
                         "path":  "messaging/audit",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/audit",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/audit",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -213,7 +213,7 @@
                     },
                     {
                         "path":  "messaging/dlq",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/dlq",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/dlq",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -223,7 +223,7 @@
                     },
                     {
                         "path":  "messaging/example_integration",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/example_integration",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/example_integration",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -233,7 +233,7 @@
                     },
                     {
                         "path":  "messaging/idempotency",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/idempotency",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/idempotency",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -243,7 +243,7 @@
                     },
                     {
                         "path":  "messaging/inbox",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/inbox",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/inbox",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -253,7 +253,7 @@
                     },
                     {
                         "path":  "messaging/outbox",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/outbox",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/outbox",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -263,7 +263,7 @@
                     },
                     {
                         "path":  "messaging/redrive",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/redrive",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/redrive",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -273,7 +273,7 @@
                     },
                     {
                         "path":  "messaging/replay",
-                        "module":  "github.com/PlatformCore/Foundation/messaging/replay",
+                        "module":  "github.com/PlatformCore/libpackage/messaging/replay",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  6,
@@ -283,7 +283,7 @@
                     },
                     {
                         "path":  "middleware/clock",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/clock",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/clock",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -293,7 +293,7 @@
                     },
                     {
                         "path":  "middleware/event",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/event",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/event",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -303,7 +303,7 @@
                     },
                     {
                         "path":  "middleware/ids",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/ids",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/ids",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -313,7 +313,7 @@
                     },
                     {
                         "path":  "middleware/logging",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/logging",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/logging",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -323,7 +323,7 @@
                     },
                     {
                         "path":  "middleware/pool",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/pool",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/pool",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -333,7 +333,7 @@
                     },
                     {
                         "path":  "middleware/propagation",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/propagation",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/propagation",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -343,7 +343,7 @@
                     },
                     {
                         "path":  "middleware/registry",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/registry",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/registry",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -353,7 +353,7 @@
                     },
                     {
                         "path":  "middleware/trace",
-                        "module":  "github.com/PlatformCore/Foundation/middleware/trace",
+                        "module":  "github.com/PlatformCore/libpackage/middleware/trace",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -363,7 +363,7 @@
                     },
                     {
                         "path":  "observability/audit",
-                        "module":  "github.com/PlatformCore/Foundation/observability/audit",
+                        "module":  "github.com/PlatformCore/libpackage/observability/audit",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -373,7 +373,7 @@
                     },
                     {
                         "path":  "observability/correlation",
-                        "module":  "github.com/PlatformCore/Foundation/observability/correlation",
+                        "module":  "github.com/PlatformCore/libpackage/observability/correlation",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -393,7 +393,7 @@
                     },
                     {
                         "path":  "observability/healthcheck",
-                        "module":  "github.com/PlatformCore/Foundation/observability/healthcheck",
+                        "module":  "github.com/PlatformCore/libpackage/observability/healthcheck",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  3,
@@ -403,7 +403,7 @@
                     },
                     {
                         "path":  "observability/logging",
-                        "module":  "github.com/PlatformCore/Foundation/observability/logging",
+                        "module":  "github.com/PlatformCore/libpackage/observability/logging",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  3,
@@ -413,7 +413,7 @@
                     },
                     {
                         "path":  "observability/metrics",
-                        "module":  "github.com/PlatformCore/Foundation/observability/metrics/basic",
+                        "module":  "github.com/PlatformCore/libpackage/observability/metrics/basic",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  2,
@@ -423,7 +423,7 @@
                     },
                     {
                         "path":  "observability/metrics/registry",
-                        "module":  "github.com/PlatformCore/Foundation/observability/metrics/basic/registry",
+                        "module":  "github.com/PlatformCore/libpackage/observability/metrics/basic/registry",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -433,7 +433,7 @@
                     },
                     {
                         "path":  "observability/performance",
-                        "module":  "github.com/PlatformCore/Foundation/observability/performance",
+                        "module":  "github.com/PlatformCore/libpackage/observability/performance",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -443,7 +443,7 @@
                     },
                     {
                         "path":  "observability/profiler",
-                        "module":  "github.com/PlatformCore/Foundation/observability/profiler",
+                        "module":  "github.com/PlatformCore/libpackage/observability/profiler",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  2,
@@ -453,7 +453,7 @@
                     },
                     {
                         "path":  "observability/sentinelprofiler",
-                        "module":  "github.com/PlatformCore/Foundation/observability/profiler/sentinel",
+                        "module":  "github.com/PlatformCore/libpackage/observability/profiler/sentinel",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -463,7 +463,7 @@
                     },
                     {
                         "path":  "observability/span",
-                        "module":  "github.com/PlatformCore/Foundation/observability/span",
+                        "module":  "github.com/PlatformCore/libpackage/observability/span",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -473,7 +473,7 @@
                     },
                     {
                         "path":  "observability/telemetry/baggage",
-                        "module":  "github.com/PlatformCore/Foundation/observability/telemetry/baggage",
+                        "module":  "github.com/PlatformCore/libpackage/observability/telemetry/baggage",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -483,7 +483,7 @@
                     },
                     {
                         "path":  "observability/telemetry/correlation",
-                        "module":  "github.com/PlatformCore/Foundation/observability/telemetry/correlation",
+                        "module":  "github.com/PlatformCore/libpackage/observability/telemetry/correlation",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -493,7 +493,7 @@
                     },
                     {
                         "path":  "observability/telemetry/trace",
-                        "module":  "github.com/PlatformCore/Foundation/observability/telemetry/trace",
+                        "module":  "github.com/PlatformCore/libpackage/observability/telemetry/trace",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -503,7 +503,7 @@
                     },
                     {
                         "path":  "observability/tracing",
-                        "module":  "github.com/PlatformCore/Foundation/observability/tracing",
+                        "module":  "github.com/PlatformCore/libpackage/observability/tracing",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  4,
@@ -513,7 +513,7 @@
                     },
                     {
                         "path":  "orchestration/di",
-                        "module":  "github.com/PlatformCore/Foundation/orchestration/di",
+                        "module":  "github.com/PlatformCore/libpackage/orchestration/di",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -523,7 +523,7 @@
                     },
                     {
                         "path":  "orchestration/workflow",
-                        "module":  "github.com/PlatformCore/Foundation/orchestration/workflow",
+                        "module":  "github.com/PlatformCore/libpackage/orchestration/workflow",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -533,7 +533,7 @@
                     },
                     {
                         "path":  "persistence/distlock",
-                        "module":  "github.com/PlatformCore/Foundation/persistence/distlock",
+                        "module":  "github.com/PlatformCore/libpackage/persistence/distlock",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -543,7 +543,7 @@
                     },
                     {
                         "path":  "persistence/tx",
-                        "module":  "github.com/PlatformCore/Foundation/persistence/tx",
+                        "module":  "github.com/PlatformCore/libpackage/persistence/tx",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -553,7 +553,7 @@
                     },
                     {
                         "path":  "persistence/uow",
-                        "module":  "github.com/PlatformCore/Foundation/persistence/uow",
+                        "module":  "github.com/PlatformCore/libpackage/persistence/uow",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -563,7 +563,7 @@
                     },
                     {
                         "path":  "platform/client",
-                        "module":  "github.com/PlatformCore/Foundation/clients/platform",
+                        "module":  "github.com/PlatformCore/libpackage/clients/platform",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -573,7 +573,7 @@
                     },
                     {
                         "path":  "platform/container",
-                        "module":  "github.com/PlatformCore/Foundation/platform/container",
+                        "module":  "github.com/PlatformCore/libpackage/platform/container",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -583,7 +583,7 @@
                     },
                     {
                         "path":  "platform/evaluator",
-                        "module":  "github.com/PlatformCore/Foundation/platform/evaluator",
+                        "module":  "github.com/PlatformCore/libpackage/platform/evaluator",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -593,7 +593,7 @@
                     },
                     {
                         "path":  "platform/eventbus",
-                        "module":  "github.com/PlatformCore/Foundation/platform/eventbus",
+                        "module":  "github.com/PlatformCore/libpackage/platform/eventbus",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -603,7 +603,7 @@
                     },
                     {
                         "path":  "platform/featureflag",
-                        "module":  "github.com/PlatformCore/Foundation/platform/featureflag",
+                        "module":  "github.com/PlatformCore/libpackage/platform/featureflag",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -613,7 +613,7 @@
                     },
                     {
                         "path":  "platform/servicemesh",
-                        "module":  "github.com/PlatformCore/Foundation/platform/servicemesh",
+                        "module":  "github.com/PlatformCore/libpackage/platform/servicemesh",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -623,7 +623,7 @@
                     },
                     {
                         "path":  "platform/versioning",
-                        "module":  "github.com/PlatformCore/Foundation/platform/versioning",
+                        "module":  "github.com/PlatformCore/libpackage/platform/versioning",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -633,7 +633,7 @@
                     },
                     {
                         "path":  "plugins/common",
-                        "module":  "github.com/PlatformCore/Foundation/plugins/common",
+                        "module":  "github.com/PlatformCore/libpackage/plugins/common",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -643,7 +643,7 @@
                     },
                     {
                         "path":  "plugins/engine",
-                        "module":  "github.com/PlatformCore/Foundation/plugins/engine",
+                        "module":  "github.com/PlatformCore/libpackage/plugins/engine",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -653,7 +653,7 @@
                     },
                     {
                         "path":  "plugins",
-                        "module":  "github.com/PlatformCore/Foundation/plugins",
+                        "module":  "github.com/PlatformCore/libpackage/plugins",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -663,7 +663,7 @@
                     },
                     {
                         "path":  "plugins/hooks",
-                        "module":  "github.com/PlatformCore/Foundation/plugins/hooks",
+                        "module":  "github.com/PlatformCore/libpackage/plugins/hooks",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -673,7 +673,7 @@
                     },
                     {
                         "path":  "plugins/loader",
-                        "module":  "github.com/PlatformCore/Foundation/plugins/loader",
+                        "module":  "github.com/PlatformCore/libpackage/plugins/loader",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -683,7 +683,7 @@
                     },
                     {
                         "path":  "plugins/manifest",
-                        "module":  "github.com/PlatformCore/Foundation/plugins/manifest",
+                        "module":  "github.com/PlatformCore/libpackage/plugins/manifest",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -693,7 +693,7 @@
                     },
                     {
                         "path":  "plugins/provider",
-                        "module":  "github.com/PlatformCore/Foundation/plugins/provider",
+                        "module":  "github.com/PlatformCore/libpackage/plugins/provider",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -703,7 +703,7 @@
                     },
                     {
                         "path":  "plugins/registry",
-                        "module":  "github.com/PlatformCore/Foundation/plugins/registry",
+                        "module":  "github.com/PlatformCore/libpackage/plugins/registry",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -713,7 +713,7 @@
                     },
                     {
                         "path":  "ratelimit",
-                        "module":  "github.com/PlatformCore/Foundation/ratelimit",
+                        "module":  "github.com/PlatformCore/libpackage/ratelimit",
                         "go":  "1.25.1",
                         "package_version":  "v1.0.0",
                         "go_files":  3,
@@ -723,7 +723,7 @@
                     },
                     {
                         "path":  "resilience/adaptive_concurrency",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/adaptive_concurrency",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/adaptive_concurrency",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -733,7 +733,7 @@
                     },
                     {
                         "path":  "resilience/adaptive_retry",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/adaptive_retry",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/adaptive_retry",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -743,7 +743,7 @@
                     },
                     {
                         "path":  "resilience/backpressure",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/backpressure",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/backpressure",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -753,7 +753,7 @@
                     },
                     {
                         "path":  "resilience/batcher",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/batcher",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/batcher",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -763,7 +763,7 @@
                     },
                     {
                         "path":  "resilience/bulkhead",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/bulkhead",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/bulkhead",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -773,7 +773,7 @@
                     },
                     {
                         "path":  "resilience/cache_stampede_protection",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/cache_stampede_protection",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/cache_stampede_protection",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -783,7 +783,7 @@
                     },
                     {
                         "path":  "resilience/checkpoint",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/checkpoint",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/checkpoint",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -793,7 +793,7 @@
                     },
                     {
                         "path":  "resilience/congestion_control",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/congestion_control",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/congestion_control",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -803,7 +803,7 @@
                     },
                     {
                         "path":  "resilience/deadline",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/deadline",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/deadline",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -813,7 +813,7 @@
                     },
                     {
                         "path":  "resilience/distributed_rate_limit",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/distributed_rate_limit",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/distributed_rate_limit",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -823,7 +823,7 @@
                     },
                     {
                         "path":  "resilience",
-                        "module":  "github.com/PlatformCore/Foundation/resilience",
+                        "module":  "github.com/PlatformCore/libpackage/resilience",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  0,
@@ -833,7 +833,7 @@
                     },
                     {
                         "path":  "resilience/health_supervisor",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/health_supervisor",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/health_supervisor",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -843,7 +843,7 @@
                     },
                     {
                         "path":  "resilience/hedged_request",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/hedged_request",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/hedged_request",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -853,7 +853,7 @@
                     },
                     {
                         "path":  "resilience/limiter",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/limiter",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/limiter",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -863,7 +863,7 @@
                     },
                     {
                         "path":  "resilience/load_shedder",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/load_shedder",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/load_shedder",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -873,7 +873,7 @@
                     },
                     {
                         "path":  "resilience/priority_queue",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/priority_queue",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/priority_queue",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -883,7 +883,7 @@
                     },
                     {
                         "path":  "resilience/quorum",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/quorum",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/quorum",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -893,7 +893,7 @@
                     },
                     {
                         "path":  "resilience/request_coalescing",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/request_coalescing",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/request_coalescing",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -903,7 +903,7 @@
                     },
                     {
                         "path":  "resilience/retry_backoff",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/retry_backoff",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/retry_backoff",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -913,7 +913,7 @@
                     },
                     {
                         "path":  "resilience/shadow_traffic",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/shadow_traffic",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/shadow_traffic",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -923,7 +923,7 @@
                     },
                     {
                         "path":  "resilience/state_synchronizer",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/state_synchronizer",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/state_synchronizer",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -933,7 +933,7 @@
                     },
                     {
                         "path":  "resilience/token_bucket",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/token_bucket",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/token_bucket",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -943,7 +943,7 @@
                     },
                     {
                         "path":  "resilience/traffic_mirroring",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/traffic_mirroring",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/traffic_mirroring",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -953,7 +953,7 @@
                     },
                     {
                         "path":  "resilience/validator",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/validator",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/validator",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -963,7 +963,7 @@
                     },
                     {
                         "path":  "resilience/workqueue",
-                        "module":  "github.com/PlatformCore/Foundation/resilience/workqueue",
+                        "module":  "github.com/PlatformCore/libpackage/resilience/workqueue",
                         "go":  "1.25.1",
                         "package_version":  "v0.1.0",
                         "go_files":  1,
@@ -973,7 +973,7 @@
                     },
                     {
                         "path":  "security",
-                        "module":  "github.com/PlatformCore/Foundation/security",
+                        "module":  "github.com/PlatformCore/libpackage/security",
                         "go":  "1.25.1",
                         "package_version":  "v1.0.0",
                         "go_files":  2,
@@ -983,7 +983,7 @@
                     },
                     {
                         "path":  "tools/lib_word",
-                        "module":  "github.com/PlatformCore/Foundation/tools/lib_word",
+                        "module":  "github.com/PlatformCore/libpackage/tools/lib_word",
                         "go":  "1.25.0",
                         "package_version":  "v0.1.0",
                         "go_files":  0,

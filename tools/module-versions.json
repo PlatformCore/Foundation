@@ -1,11 +1,10 @@
 ﻿{
-    "github.com/driftappdev":  "v0.1.1",
-    "github.com/PlatformCore/Foundation/messaging/dlq":  "v0.1.1",
-    "github.com/PlatformCore/Foundation/messaging/inbox":  "v0.1.1",
-    "github.com/PlatformCore/Foundation/messaging/outbox":  "v0.1.1",
-    "github.com/PlatformCore/Foundation/messaging/redrive":  "v0.1.1",
-    "github.com/PlatformCore/Foundation/messaging/replay":  "v0.1.1",
-    "github.com/PlatformCore/Foundation/persistence/tx":  "v0.1.1",
-    "github.com/PlatformCore/Foundation/persistence/uow":  "v0.1.1"
+    "github.com/driftappdev":  "v0.2.1",
+    "github.com/PlatformCore/libpackage/messaging/dlq":  "v0.2.1",
+    "github.com/PlatformCore/libpackage/messaging/inbox":  "v0.2.1",
+    "github.com/PlatformCore/libpackage/messaging/outbox":  "v0.2.1",
+    "github.com/PlatformCore/libpackage/messaging/redrive":  "v0.2.1",
+    "github.com/PlatformCore/libpackage/messaging/replay":  "v0.2.1",
+    "github.com/PlatformCore/libpackage/persistence/tx":  "v0.2.1",
+    "github.com/PlatformCore/libpackage/persistence/uow":  "v0.2.1"
 }
-

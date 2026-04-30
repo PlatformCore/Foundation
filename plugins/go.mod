@@ -1,8 +1,6 @@
-module github.com/PlatformCore/Foundation/plugins
+module github.com/PlatformCore/libpackage/plugins
 
 go 1.23.0
-
-require go.uber.org/zap v1.28.0
 
 require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect

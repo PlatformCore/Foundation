@@ -13,9 +13,9 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.uber.org/zap"
 
-	"github.com/PlatformCore/Foundation/middleware/ids"
-	"github.com/PlatformCore/Foundation/middleware/propagation"
-	obttrace "github.com/PlatformCore/Foundation/middleware/trace"
+	"github.com/PlatformCore/libpackage/middleware/ids"
+	"github.com/PlatformCore/libpackage/middleware/propagation"
+	obttrace "github.com/PlatformCore/libpackage/middleware/trace"
 )
 
 // â”€â”€â”€ Message â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€

@@ -1,3 +1,6 @@
+//go:build legacy
+// +build legacy
+
 // Package gologmid provides production-grade HTTP logging middleware:
 // structured request/response logging, latency tracking, request ID injection,
 // body capture, configurable field extraction, and skip patterns.

@@ -19,7 +19,7 @@ This updates:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tools\bump-module-version.ps1 `
-  -Module github.com/PlatformCore/Foundation/persistence/uow `
+  -Module github.com/PlatformCore/libpackage/persistence/uow `
   -Version v0.1.1
 ```
 
@@ -27,7 +27,7 @@ Or auto-bump patch:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tools\bump-module-version.ps1 `
-  -Module github.com/PlatformCore/Foundation/messaging/outbox `
+  -Module github.com/PlatformCore/libpackage/messaging/outbox `
   -Bump patch
 ```
 

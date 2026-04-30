@@ -1,4 +1,4 @@
-﻿# enterprise/middleware
+# enterprise/middleware
 
 Enterprise-grade, framework-agnostic HTTP middleware package for Go services.  
 Compatible with `net/http` and any router that accepts `http.Handler` (Chi, Gorilla, Echo adapters, etc.).
@@ -26,7 +26,7 @@ Compatible with `net/http` and any router that accepts `http.Handler` (Chi, Gori
 ## Installation
 
 ```bash
-go get github.com/PlatformCore/Foundation/middleware/nethttp
+go get github.com/PlatformCore/libpackage/middleware/nethttp
 ```
 
 ## Quick Start
@@ -39,7 +39,7 @@ import (
     "time"
 
     "go.uber.org/zap"
-    "github.com/PlatformCore/Foundation/middleware/nethttp"
+    "github.com/PlatformCore/libpackage/middleware/nethttp"
 )
 
 func main() {

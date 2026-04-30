@@ -8,50 +8,50 @@ Install only the module you need.
 ## Example install commands
 
 ```bash
-go get github.com/PlatformCore/Foundation/core/types@latest
-go get github.com/PlatformCore/Foundation/core/result_legacy@latest
-go get github.com/PlatformCore/Foundation/core/context@latest
-go get github.com/PlatformCore/Foundation/core/constants@latest
-go get github.com/PlatformCore/Foundation/core/errors@latest
-go get github.com/PlatformCore/Foundation/core/logger@latest
+go get github.com/PlatformCore/libpackage/core/types@latest
+go get github.com/PlatformCore/libpackage/core/result_legacy@latest
+go get github.com/PlatformCore/libpackage/core/context@latest
+go get github.com/PlatformCore/libpackage/core/constants@latest
+go get github.com/PlatformCore/libpackage/core/errors@latest
+go get github.com/PlatformCore/libpackage/core/logger@latest
 go get github.com/driftappdev/logmid/logging-middleware@latest
-go get github.com/PlatformCore/Foundation/security/jwt@latest
+go get github.com/PlatformCore/libpackage/security/jwt@latest
 ```
 
 
 ## Other available modules
 
-- `github.com/PlatformCore/Foundation/security/jwt`
-- `github.com/PlatformCore/Foundation/security/oauth2`
-- `github.com/PlatformCore/Foundation/security/hash`
-- `github.com/PlatformCore/Foundation/runtime/lifecycle`
-- `github.com/PlatformCore/Foundation/runtime/shutdown`
-- `github.com/PlatformCore/Foundation/runtime/health`
-- `github.com/PlatformCore/Foundation/security/auth_middleware/goauth`
-- `github.com/PlatformCore/Foundation/resilience/cache`
-- `github.com/PlatformCore/Foundation/resilience/circuitbreaker/gocircuit`
-- `github.com/PlatformCore/Foundation/core/errors/goerror_compat`
-- `github.com/PlatformCore/Foundation/observability/logging/gologger`
-- `github.com/PlatformCore/Foundation/observability/gometrics`
-- `github.com/PlatformCore/Foundation/resilience/pagination`
-- `github.com/PlatformCore/Foundation/ratelimit/compat/goratelimit`
-- `github.com/PlatformCore/Foundation/resilience/retry/goretry`
-- `github.com/PlatformCore/Foundation/security/sanitizer/gosanitizer`
-- `github.com/PlatformCore/Foundation/resilience/timeout/gotimeout`
-- `github.com/PlatformCore/Foundation/observability/tracing/gotracing`
-- `github.com/PlatformCore/Foundation/resilience/validate`
-- `github.com/PlatformCore/Foundation/resilience/validator`
-- `github.com/PlatformCore/Foundation/security/encryption`
+- `github.com/PlatformCore/libpackage/security/jwt`
+- `github.com/PlatformCore/libpackage/security/oauth2`
+- `github.com/PlatformCore/libpackage/security/hash`
+- `github.com/PlatformCore/libpackage/runtime/lifecycle`
+- `github.com/PlatformCore/libpackage/runtime/shutdown`
+- `github.com/PlatformCore/libpackage/runtime/health`
+- `github.com/PlatformCore/libpackage/security/auth_middleware/goauth`
+- `github.com/PlatformCore/libpackage/resilience/cache`
+- `github.com/PlatformCore/libpackage/resilience/circuitbreaker/gocircuit`
+- `github.com/PlatformCore/libpackage/core/errors/goerror_compat`
+- `github.com/PlatformCore/libpackage/observability/logging/gologger`
+- `github.com/PlatformCore/libpackage/observability/gometrics`
+- `github.com/PlatformCore/libpackage/resilience/pagination`
+- `github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit`
+- `github.com/PlatformCore/libpackage/resilience/retry/goretry`
+- `github.com/PlatformCore/libpackage/security/sanitizer/gosanitizer`
+- `github.com/PlatformCore/libpackage/resilience/timeout/gotimeout`
+- `github.com/PlatformCore/libpackage/observability/tracing/gotracing`
+- `github.com/PlatformCore/libpackage/resilience/validate`
+- `github.com/PlatformCore/libpackage/resilience/validator`
+- `github.com/PlatformCore/libpackage/security/encryption`
 ### Persistence
-- `github.com/PlatformCore/Foundation/persistence/tx`
-- `github.com/PlatformCore/Foundation/persistence/uow`
+- `github.com/PlatformCore/libpackage/persistence/tx`
+- `github.com/PlatformCore/libpackage/persistence/uow`
 
 ### Messaging
-- `github.com/PlatformCore/Foundation/messaging/outbox`
-- `github.com/PlatformCore/Foundation/messaging/inbox`
-- `github.com/PlatformCore/Foundation/messaging/dlq`
-- `github.com/PlatformCore/Foundation/messaging/redrive`
-- `github.com/PlatformCore/Foundation/messaging/replay`
+- `github.com/PlatformCore/libpackage/messaging/outbox`
+- `github.com/PlatformCore/libpackage/messaging/inbox`
+- `github.com/PlatformCore/libpackage/messaging/dlq`
+- `github.com/PlatformCore/libpackage/messaging/redrive`
+- `github.com/PlatformCore/libpackage/messaging/replay`
 ## Local development in this repo
 
 - This repo now uses `go.work` to develop multiple modules together.

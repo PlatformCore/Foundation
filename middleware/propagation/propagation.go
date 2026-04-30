@@ -13,7 +13,7 @@ import (
 
 	"google.golang.org/grpc/metadata"
 
-	"github.com/PlatformCore/Foundation/middleware/ids"
+	"github.com/PlatformCore/libpackage/middleware/ids"
 )
 
 // â”€â”€â”€ Enterprise Envelope Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -324,12 +324,10 @@ func NewKafkaHeaders(rawHeaders map[string]string) *KafkaHeaders {
 	return &KafkaHeaders{headers: rawHeaders}
 }
 
-func (k *KafkaHeaders) Get(key string) string        { return k.headers[strings.ToLower(key)] }
-func (k *KafkaHeaders) Set(key, value string)        { k.headers[strings.ToLower(key)] = value }
-func (k *KafkaHeaders) All() map[string]string        { return k.headers }
+func (k *KafkaHeaders) Get(key string) string  { return k.headers[strings.ToLower(key)] }
+func (k *KafkaHeaders) Set(key, value string)  { k.headers[strings.ToLower(key)] = value }
+func (k *KafkaHeaders) All() map[string]string { return k.headers }
 func (k *KafkaHeaders) String() string {
 	b, _ := json.Marshal(k.headers)
 	return fmt.Sprintf("KafkaHeaders(%s)", b)
 }
-
-

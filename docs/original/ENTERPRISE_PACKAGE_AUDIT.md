@@ -6,21 +6,21 @@ Total modules (go.mod): 83
 
 ## Duplicate/Overlap Clusters (heuristic)
 - middleware stack (18 modules)
-  - github.com/PlatformCore/Foundation/observability/logging-middleware, github.com/driftappdev/middleware, github.com/driftappdev/middleware/adminshield/admin-middleware, github.com/driftappdev/middleware/requestid, github.com/driftappdev/middleware/timeout, github.com/enterprise/middleware, github.com/PlatformCore/Foundation/middleware/clock, github.com/enterprise/middleware/cmd/example, github.com/PlatformCore/Foundation/middleware/event, github.com/enterprise/middleware/grpc, github.com/enterprise/middleware/http, github.com/PlatformCore/Foundation/middleware/ids, github.com/enterprise/middleware/mnt/user-data/outputs/obslib/pkg/middleware/event, github.com/PlatformCore/Foundation/middleware/pool, github.com/PlatformCore/Foundation/middleware/propagation, github.com/PlatformCore/Foundation/middleware/registry, github.com/enterprise/middleware/telemetry, github.com/PlatformCore/Foundation/middleware/trace
+  - github.com/PlatformCore/libpackage/observability/logging-middleware, github.com/driftappdev/middleware, github.com/driftappdev/middleware/adminshield/admin-middleware, github.com/driftappdev/middleware/requestid, github.com/driftappdev/middleware/timeout, github.com/enterprise/middleware, github.com/PlatformCore/libpackage/middleware/clock, github.com/enterprise/middleware/cmd/example, github.com/PlatformCore/libpackage/middleware/event, github.com/enterprise/middleware/grpc, github.com/enterprise/middleware/http, github.com/PlatformCore/libpackage/middleware/ids, github.com/enterprise/middleware/mnt/user-data/outputs/obslib/pkg/middleware/event, github.com/PlatformCore/libpackage/middleware/pool, github.com/PlatformCore/libpackage/middleware/propagation, github.com/PlatformCore/libpackage/middleware/registry, github.com/enterprise/middleware/telemetry, github.com/PlatformCore/libpackage/middleware/trace
 - tracing/telemetry stack (12 modules)
-  - github.com/PlatformCore/Foundation/observability/tracing/gotracing, github.com/driftappdev/observability, github.com/PlatformCore/Foundation/observability/audit, github.com/PlatformCore/Foundation/observability/correlation, github.com/PlatformCore/Foundation/observability/healthcheck, github.com/PlatformCore/Foundation/observability/performance, github.com/PlatformCore/Foundation/observability/profiler/sentinel, github.com/PlatformCore/Foundation/observability/span, github.com/PlatformCore/Foundation/observability/tracing, github.com/driftappdev/observability/telemetry, github.com/enterprise/middleware/telemetry, github.com/PlatformCore/Foundation/middleware/trace
+  - github.com/PlatformCore/libpackage/observability/tracing/gotracing, github.com/driftappdev/observability, github.com/PlatformCore/libpackage/observability/audit, github.com/PlatformCore/libpackage/observability/correlation, github.com/PlatformCore/libpackage/observability/healthcheck, github.com/PlatformCore/libpackage/observability/performance, github.com/PlatformCore/libpackage/observability/profiler/sentinel, github.com/PlatformCore/libpackage/observability/span, github.com/PlatformCore/libpackage/observability/tracing, github.com/driftappdev/observability/telemetry, github.com/enterprise/middleware/telemetry, github.com/PlatformCore/libpackage/middleware/trace
 - security/auth stack (10 modules)
-  - github.com/driftappdev/auth, github.com/PlatformCore/Foundation/security/auth_middleware/goauth, github.com/PlatformCore/Foundation/security, github.com/PlatformCore/Foundation/security/encryption, github.com/PlatformCore/Foundation/security/hash, github.com/PlatformCore/Foundation/security/jwt, github.com/PlatformCore/Foundation/security/oauth2, github.com/PlatformCore/Foundation/security/permission, github.com/PlatformCore/Foundation/security/policy, github.com/PlatformCore/Foundation/security/threatdefense
+  - github.com/driftappdev/auth, github.com/PlatformCore/libpackage/security/auth_middleware/goauth, github.com/PlatformCore/libpackage/security, github.com/PlatformCore/libpackage/security/encryption, github.com/PlatformCore/libpackage/security/hash, github.com/PlatformCore/libpackage/security/jwt, github.com/PlatformCore/libpackage/security/oauth2, github.com/PlatformCore/libpackage/security/permission, github.com/PlatformCore/libpackage/security/policy, github.com/PlatformCore/libpackage/security/threatdefense
 - rate-limit stack (4 modules)
-  - github.com/PlatformCore/Foundation/ratelimit/compat/goratelimit, github.com/PlatformCore/Foundation/ratelimit, github.com/PlatformCore/Foundation/ratelimit/enterprise, github.com/PlatformCore/Foundation/ratelimit/memory_store
+  - github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit, github.com/PlatformCore/libpackage/ratelimit, github.com/PlatformCore/libpackage/ratelimit/enterprise, github.com/PlatformCore/libpackage/ratelimit/memory_store
 - resilience stack (4 modules)
-  - github.com/PlatformCore/Foundation/resilience/circuitbreaker/gocircuit, github.com/PlatformCore/Foundation/tools/lib_word/flowguard-ultimate, github.com/PlatformCore/Foundation/resilience, github.com/PlatformCore/Foundation/resilience/validator
+  - github.com/PlatformCore/libpackage/resilience/circuitbreaker/gocircuit, github.com/PlatformCore/libpackage/tools/lib_word/flowguard-ultimate, github.com/PlatformCore/libpackage/resilience, github.com/PlatformCore/libpackage/resilience/validator
 - timeout/deadline stack (2 modules)
-  - github.com/PlatformCore/Foundation/resilience/timeout/gotimeout, github.com/driftappdev/middleware/timeout
+  - github.com/PlatformCore/libpackage/resilience/timeout/gotimeout, github.com/driftappdev/middleware/timeout
 - validation stack (2 modules)
-  - github.com/PlatformCore/Foundation/resilience/validator, github.com/driftappdev/foundation/validator
+  - github.com/PlatformCore/libpackage/resilience/validator, github.com/driftappdev/foundation/validator
 - logging stack (2 modules)
-  - github.com/PlatformCore/Foundation/observability/logging/gologger, github.com/PlatformCore/Foundation/observability/logging-middleware
+  - github.com/PlatformCore/libpackage/observability/logging/gologger, github.com/PlatformCore/libpackage/observability/logging-middleware
 
 ## Module Inventory
 ### github.com/driftappdev/adminshield
@@ -48,7 +48,7 @@ Total modules (go.mod): 83
   - schema\schema.go
   - workflow\workflow.go
 
-### github.com/PlatformCore/Foundation/clients
+### github.com/PlatformCore/libpackage/clients
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\client
 - Role: general utility
 - Go files: 8
@@ -62,7 +62,7 @@ Total modules (go.mod): 83
   - nats\publisher.go
   - nats\subscriber.go
 
-### github.com/PlatformCore/Foundation/config
+### github.com/PlatformCore/libpackage/config
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\config
 - Role: general utility
 - Go files: 5
@@ -73,7 +73,7 @@ Total modules (go.mod): 83
   - loader\loader.go
   - watcher\watcher.go
 
-### github.com/PlatformCore/Foundation/core/contracts
+### github.com/PlatformCore/libpackage/core/contracts
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\contracts
 - Role: general utility
 - Go files: 4
@@ -83,7 +83,7 @@ Total modules (go.mod): 83
   - response\envelope.go
   - versioning\version.go
 
-### github.com/PlatformCore/Foundation/core
+### github.com/PlatformCore/libpackage/core
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\core
 - Role: general utility
 - Go files: 21
@@ -110,7 +110,7 @@ Total modules (go.mod): 83
   - utils\time.go
   - utils\utils.go
 
-### github.com/PlatformCore/Foundation/orchestration/di
+### github.com/PlatformCore/libpackage/orchestration/di
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\di
 - Role: runtime/platform/integration
 - Go files: 5
@@ -121,7 +121,7 @@ Total modules (go.mod): 83
   - registry\registry.go
   - scope\scope.go
 
-### github.com/PlatformCore/Foundation/platform/eventbus
+### github.com/PlatformCore/libpackage/platform/eventbus
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\eventbus
 - Role: messaging/event pipeline
 - Go files: 10
@@ -137,7 +137,7 @@ Total modules (go.mod): 83
   - serializer\serializer.go
   - subscriber\subscriber.go
 
-### github.com/PlatformCore/Foundation/platform/featureflag
+### github.com/PlatformCore/libpackage/platform/featureflag
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\featureflag
 - Role: general utility
 - Go files: 13
@@ -156,42 +156,42 @@ Total modules (go.mod): 83
   - types\target.go
   - types\variant.go
 
-### github.com/PlatformCore/Foundation/security/auth_middleware/goauth
+### github.com/PlatformCore/libpackage/security/auth_middleware/goauth
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\goauth
 - Role: auth/security
 - Go files: 1
 - Files:
   - auth.middleware.go
 
-### github.com/PlatformCore/Foundation/resilience/circuitbreaker/gocircuit
+### github.com/PlatformCore/libpackage/resilience/circuitbreaker/gocircuit
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\gocircuit
 - Role: resilience primitives
 - Go files: 1
 - Files:
   - circuitBreaker.go
 
-### github.com/PlatformCore/Foundation/core/errors/goerror_compat
+### github.com/PlatformCore/libpackage/core/errors/goerror_compat
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\goerror
 - Role: general utility
 - Go files: 1
 - Files:
   - error.go
 
-### github.com/PlatformCore/Foundation/observability/logging/gologger
+### github.com/PlatformCore/libpackage/observability/logging/gologger
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\gologger
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - logger.go
 
-### github.com/PlatformCore/Foundation/observability/gometrics
+### github.com/PlatformCore/libpackage/observability/gometrics
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\gometrics
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - metrics.go
 
-### github.com/PlatformCore/Foundation/ratelimit/compat/goratelimit
+### github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\goratelimit
 - Role: rate limiting / throttling
 - Go files: 6
@@ -203,35 +203,35 @@ Total modules (go.mod): 83
   - framework_middleware.go
   - rateLimit.middleware.go
 
-### github.com/PlatformCore/Foundation/resilience/retry/goretry
+### github.com/PlatformCore/libpackage/resilience/retry/goretry
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\goretry
 - Role: retry/backoff
 - Go files: 1
 - Files:
   - retry.go
 
-### github.com/PlatformCore/Foundation/security/sanitizer/gosanitizer
+### github.com/PlatformCore/libpackage/security/sanitizer/gosanitizer
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\gosanitizer
 - Role: auth/security
 - Go files: 1
 - Files:
   - sanitizer.go
 
-### github.com/PlatformCore/Foundation/resilience/timeout/gotimeout
+### github.com/PlatformCore/libpackage/resilience/timeout/gotimeout
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\gotimeout
 - Role: timeout / deadlines
 - Go files: 1
 - Files:
   - timeout.go
 
-### github.com/PlatformCore/Foundation/observability/tracing/gotracing
+### github.com/PlatformCore/libpackage/observability/tracing/gotracing
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\gotracing
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - tracing.go
 
-### github.com/PlatformCore/Foundation/tools/lib_word
+### github.com/PlatformCore/libpackage/tools/lib_word
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\lib_word
 - Role: general utility
 - Go files: 13
@@ -250,14 +250,14 @@ Total modules (go.mod): 83
   - token_bucket.go
   - workqueue.go
 
-### github.com/PlatformCore/Foundation/tools/lib_word/cmd/example
+### github.com/PlatformCore/libpackage/tools/lib_word/cmd/example
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\lib_word\cmd\example
 - Role: general utility
 - Go files: 1
 - Files:
   - main.go
 
-### github.com/PlatformCore/Foundation/tools/lib_word/flowguard-ultimate
+### github.com/PlatformCore/libpackage/tools/lib_word/flowguard-ultimate
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\lib_word\flowguard-ultimate
 - Role: resilience primitives
 - Go files: 10
@@ -273,63 +273,63 @@ Total modules (go.mod): 83
   - state_synchronizer.go
   - traffic_mirroring.go
 
-### github.com/PlatformCore/Foundation/observability/logging-middleware
+### github.com/PlatformCore/libpackage/observability/logging-middleware
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\logging-middleware
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - logging.middleware.go
 
-### github.com/PlatformCore/Foundation/messaging/audit
+### github.com/PlatformCore/libpackage/messaging/audit
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\auditv.1
 - Role: runtime/platform/integration
 - Go files: 1
 - Files:
   - audit.go
 
-### github.com/PlatformCore/Foundation/messaging/dlq
+### github.com/PlatformCore/libpackage/messaging/dlq
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\dlq
 - Role: messaging/event pipeline
 - Go files: 1
 - Files:
   - dlq.go
 
-### github.com/PlatformCore/Foundation/messaging/example_integration
+### github.com/PlatformCore/libpackage/messaging/example_integration
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\example_integration
 - Role: general utility
 - Go files: 1
 - Files:
   - example_inte.go
 
-### github.com/PlatformCore/Foundation/messaging/idempotency
+### github.com/PlatformCore/libpackage/messaging/idempotency
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\idempotency
 - Role: general utility
 - Go files: 1
 - Files:
   - idempotency.go
 
-### github.com/PlatformCore/Foundation/messaging/inbox
+### github.com/PlatformCore/libpackage/messaging/inbox
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\inbox
 - Role: messaging/event pipeline
 - Go files: 1
 - Files:
   - inbox.go
 
-### github.com/PlatformCore/Foundation/messaging/outbox
+### github.com/PlatformCore/libpackage/messaging/outbox
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\outbox
 - Role: messaging/event pipeline
 - Go files: 1
 - Files:
   - outbox.go
 
-### github.com/PlatformCore/Foundation/messaging/redrive
+### github.com/PlatformCore/libpackage/messaging/redrive
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\redrive
 - Role: messaging/event pipeline
 - Go files: 1
 - Files:
   - redrive.go
 
-### github.com/PlatformCore/Foundation/messaging/replay
+### github.com/PlatformCore/libpackage/messaging/replay
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\replay
 - Role: messaging/event pipeline
 - Go files: 6
@@ -406,21 +406,21 @@ Total modules (go.mod): 83
   - profiler\profiler.go
   - trace\trace.go
 
-### github.com/PlatformCore/Foundation/observability/audit
+### github.com/PlatformCore/libpackage/observability/audit
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\audit
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - audit.go
 
-### github.com/PlatformCore/Foundation/observability/correlation
+### github.com/PlatformCore/libpackage/observability/correlation
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\observability\correlation
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - correlation.go
 
-### github.com/PlatformCore/Foundation/observability/healthcheck
+### github.com/PlatformCore/libpackage/observability/healthcheck
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\observability\healthcheck
 - Role: observability / telemetry
 - Go files: 3
@@ -429,28 +429,28 @@ Total modules (go.mod): 83
   - liveness.go
   - readiness.go
 
-### github.com/PlatformCore/Foundation/observability/performance
+### github.com/PlatformCore/libpackage/observability/performance
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\performance
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - performance.go
 
-### github.com/PlatformCore/Foundation/observability/profiler/sentinel
+### github.com/PlatformCore/libpackage/observability/profiler/sentinel
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\sentinelprofiler
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - profiler.go
 
-### github.com/PlatformCore/Foundation/observability/span
+### github.com/PlatformCore/libpackage/observability/span
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\observability\span
 - Role: observability / telemetry
 - Go files: 1
 - Files:
   - span.go
 
-### github.com/PlatformCore/Foundation/observability/tracing
+### github.com/PlatformCore/libpackage/observability/tracing
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\observability\tracing
 - Role: observability / telemetry
 - Go files: 3
@@ -464,21 +464,21 @@ Total modules (go.mod): 83
 - Role: data access / transaction
 - Go files: 0
 
-### github.com/PlatformCore/Foundation/persistence/distlock
+### github.com/PlatformCore/libpackage/persistence/distlock
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\distlock
 - Role: data access / transaction
 - Go files: 1
 - Files:
   - distlock.go
 
-### github.com/PlatformCore/Foundation/persistence/tx
+### github.com/PlatformCore/libpackage/persistence/tx
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\tx
 - Role: data access / transaction
 - Go files: 1
 - Files:
   - tx.go
 
-### github.com/PlatformCore/Foundation/persistence/uow
+### github.com/PlatformCore/libpackage/persistence/uow
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\uow
 - Role: data access / transaction
 - Go files: 1
@@ -495,14 +495,14 @@ Total modules (go.mod): 83
   - evaluator\evaluator.go
   - versioning\versioning.go
 
-### github.com/PlatformCore/Foundation/platform/servicemesh
+### github.com/PlatformCore/libpackage/platform/servicemesh
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\servicemesh
 - Role: runtime/platform/integration
 - Go files: 1
 - Files:
   - servicemesh.go
 
-### github.com/PlatformCore/Foundation/plugins
+### github.com/PlatformCore/libpackage/plugins
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\plugins
 - Role: runtime/platform/integration
 - Go files: 5
@@ -513,21 +513,21 @@ Total modules (go.mod): 83
   - provider\provider.go
   - registry\registry.go
 
-### github.com/PlatformCore/Foundation/plugins/common
+### github.com/PlatformCore/libpackage/plugins/common
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\common
 - Role: runtime/platform/integration
 - Go files: 1
 - Files:
   - common.go
 
-### github.com/PlatformCore/Foundation/plugins/engine
+### github.com/PlatformCore/libpackage/plugins/engine
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\engine
 - Role: runtime/platform/integration
 - Go files: 1
 - Files:
   - engine.go
 
-### github.com/PlatformCore/Foundation/ratelimit
+### github.com/PlatformCore/libpackage/ratelimit
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\ratelimitX
 - Role: rate limiting / throttling
 - Go files: 9
@@ -542,40 +542,40 @@ Total modules (go.mod): 83
   - redis_store\redis_store.go
   - result\result.go
 
-### github.com/PlatformCore/Foundation/ratelimit/enterprise
+### github.com/PlatformCore/libpackage/ratelimit/enterprise
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\enterprise
 - Role: rate limiting / throttling
 - Go files: 1
 - Files:
   - ratelimit.go
 
-### github.com/PlatformCore/Foundation/ratelimit/memory_store
+### github.com/PlatformCore/libpackage/ratelimit/memory_store
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\ratelimitX\memory_store
 - Role: rate limiting / throttling
 - Go files: 1
 - Files:
   - memory_store.go
 
-### github.com/PlatformCore/Foundation/resilience
+### github.com/PlatformCore/libpackage/resilience
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\resilience
 - Role: resilience primitives
 - Go files: 0
 
-### github.com/PlatformCore/Foundation/resilience/validator
+### github.com/PlatformCore/libpackage/resilience/validator
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\resilience\validator
 - Role: resilience primitives
 - Go files: 1
 - Files:
   - validator.go
 
-### github.com/PlatformCore/Foundation/core/result_legacy
+### github.com/PlatformCore/libpackage/core/result_legacy
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\result
 - Role: general utility
 - Go files: 1
 - Files:
   - result.go
 
-### github.com/PlatformCore/Foundation/runtime
+### github.com/PlatformCore/libpackage/runtime
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\runtime
 - Role: runtime/platform/integration
 - Go files: 4
@@ -585,35 +585,35 @@ Total modules (go.mod): 83
   - shutdown\shutdown.go
   - signals\signals.go
 
-### github.com/PlatformCore/Foundation/security
+### github.com/PlatformCore/libpackage/security
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\security
 - Role: auth/security
 - Go files: 1
 - Files:
   - security.go
 
-### github.com/PlatformCore/Foundation/security/encryption
+### github.com/PlatformCore/libpackage/security/encryption
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\encryption
 - Role: auth/security
 - Go files: 1
 - Files:
   - encryption.go
 
-### github.com/PlatformCore/Foundation/security/hash
+### github.com/PlatformCore/libpackage/security/hash
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\hash
 - Role: auth/security
 - Go files: 1
 - Files:
   - hash.go
 
-### github.com/PlatformCore/Foundation/security/jwt
+### github.com/PlatformCore/libpackage/security/jwt
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\jwt
 - Role: auth/security
 - Go files: 1
 - Files:
   - jwt.go
 
-### github.com/PlatformCore/Foundation/security/oauth2
+### github.com/PlatformCore/libpackage/security/oauth2
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\oauth2
 - Role: auth/security
 - Go files: 2
@@ -621,21 +621,21 @@ Total modules (go.mod): 83
   - client.go
   - oauth2.go
 
-### github.com/PlatformCore/Foundation/security/permission
+### github.com/PlatformCore/libpackage/security/permission
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\permission
 - Role: auth/security
 - Go files: 1
 - Files:
   - permission.go
 
-### github.com/PlatformCore/Foundation/security/policy
+### github.com/PlatformCore/libpackage/security/policy
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\policy
 - Role: auth/security
 - Go files: 1
 - Files:
   - policy.go
 
-### github.com/PlatformCore/Foundation/security/threatdefense
+### github.com/PlatformCore/libpackage/security/threatdefense
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\threatdefense
 - Role: auth/security
 - Go files: 1
@@ -667,7 +667,7 @@ Total modules (go.mod): 83
 - Role: http/grpc middleware
 - Go files: 0
 
-### github.com/PlatformCore/Foundation/middleware/clock
+### github.com/PlatformCore/libpackage/middleware/clock
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\middleware\push_code_middleware\clock
 - Role: http/grpc middleware
 - Go files: 1
@@ -681,7 +681,7 @@ Total modules (go.mod): 83
 - Files:
   - main.go
 
-### github.com/PlatformCore/Foundation/middleware/event
+### github.com/PlatformCore/libpackage/middleware/event
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\middleware\push_code_middleware\event
 - Role: http/grpc middleware
 - Go files: 1
@@ -718,7 +718,7 @@ Total modules (go.mod): 83
   - tracing.go
   - validator.go
 
-### github.com/PlatformCore/Foundation/middleware/ids
+### github.com/PlatformCore/libpackage/middleware/ids
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\middleware\push_code_middleware\ids
 - Role: http/grpc middleware
 - Go files: 1
@@ -732,21 +732,21 @@ Total modules (go.mod): 83
 - Files:
   - middleware.go
 
-### github.com/PlatformCore/Foundation/middleware/pool
+### github.com/PlatformCore/libpackage/middleware/pool
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\middleware\push_code_middleware\pool
 - Role: http/grpc middleware
 - Go files: 1
 - Files:
   - bytespool.go
 
-### github.com/PlatformCore/Foundation/middleware/propagation
+### github.com/PlatformCore/libpackage/middleware/propagation
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\middleware\push_code_middleware\propagation
 - Role: http/grpc middleware
 - Go files: 1
 - Files:
   - propagation.go
 
-### github.com/PlatformCore/Foundation/middleware/registry
+### github.com/PlatformCore/libpackage/middleware/registry
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\middleware\push_code_middleware\registry
 - Role: http/grpc middleware
 - Go files: 1
@@ -760,7 +760,7 @@ Total modules (go.mod): 83
 - Files:
   - provider.go
 
-### github.com/PlatformCore/Foundation/middleware/trace
+### github.com/PlatformCore/libpackage/middleware/trace
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\middleware\push_code_middleware\trace
 - Role: observability / telemetry
 - Go files: 1

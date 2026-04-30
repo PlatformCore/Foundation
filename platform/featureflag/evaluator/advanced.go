@@ -3,7 +3,7 @@ package evaluator
 import (
 	"context"
 
-	ffclient "github.com/PlatformCore/Foundation/platform/featureflag/client"
+	ffclient "github.com/PlatformCore/libpackage/platform/featureflag/client"
 )
 
 type Subject struct {

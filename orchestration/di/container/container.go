@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/PlatformCore/Foundation/orchestration/di/registry"
+	"github.com/PlatformCore/libpackage/orchestration/di/registry"
 )
 
 type Factory func(c *Container) (any, error)

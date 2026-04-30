@@ -1,6 +1,6 @@
 package serializer
 
-import eventbus "github.com/PlatformCore/Foundation/platform/eventbus/codec"
+import eventbus "github.com/PlatformCore/libpackage/platform/eventbus/codec"
 
 type Serializer struct{ Codec eventbus.Codec }
 

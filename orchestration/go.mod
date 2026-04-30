@@ -1,6 +1,6 @@
-module github.com/PlatformCore/Foundation/orchestration
+module github.com/PlatformCore/libpackage/orchestration
 
-go 1.25.0
+go 1.23.0
 
 require (
 	github.com/go-redis/redis/v8 v8.11.5

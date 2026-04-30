@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/PlatformCore/Foundation/plugins/hooks"
-	"github.com/PlatformCore/Foundation/plugins/manifest"
+	"github.com/PlatformCore/libpackage/plugins/hooks"
+	"github.com/PlatformCore/libpackage/plugins/manifest"
 )
 
 type Loader interface {

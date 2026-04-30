@@ -3,7 +3,7 @@ package deadletter
 import (
 	"context"
 
-	"github.com/PlatformCore/Foundation/platform/eventbus/subscriber"
+	"github.com/PlatformCore/libpackage/platform/eventbus/subscriber"
 )
 
 type Writer interface {

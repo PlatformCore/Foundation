@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PlatformCore/Foundation/plugins/common"
+	"github.com/PlatformCore/libpackage/plugins/common"
 )
 
 // ============================================================

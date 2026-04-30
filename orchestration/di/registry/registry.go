@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/PlatformCore/Foundation/orchestration/di/provider"
+	"github.com/PlatformCore/libpackage/orchestration/di/provider"
 )
 
 type Entry struct {

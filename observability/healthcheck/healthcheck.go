@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	coretypes "github.com/PlatformCore/Foundation/core/types"
+	coretypes "github.com/PlatformCore/libpackage/core/types"
 )
 
 // Checker represents a single health check probe.

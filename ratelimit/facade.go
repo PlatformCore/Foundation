@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	common "github.com/PlatformCore/Foundation/plugins/common"
-	ent "github.com/PlatformCore/Foundation/ratelimit/enterprise"
-	legacy "github.com/PlatformCore/Foundation/ratelimit/legacy"
+	common "github.com/PlatformCore/libpackage/plugins/common"
+	ent "github.com/PlatformCore/libpackage/ratelimit/enterprise"
+	legacy "github.com/PlatformCore/libpackage/ratelimit/legacy"
 	"github.com/go-redis/redis/v8"
 	"google.golang.org/grpc"
 )

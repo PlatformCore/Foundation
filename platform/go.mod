@@ -1,8 +1,6 @@
-module github.com/PlatformCore/Foundation/platform
+module github.com/PlatformCore/libpackage/platform
 
-go 1.25.0
-
-require github.com/go-redis/redis/v8 v8.11.5
+go 1.23.0
 
 require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect

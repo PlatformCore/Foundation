@@ -26,7 +26,7 @@ This command will:
 Consumers install with version:
 
 ```bash
-go get github.com/PlatformCore/Foundation/platform/eventbus/retry@v0.1.0
+go get github.com/PlatformCore/libpackage/platform/eventbus/retry@v0.1.0
 ```
 
 

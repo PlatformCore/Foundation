@@ -1,8 +1,6 @@
-module github.com/PlatformCore/Foundation/config
+module github.com/PlatformCore/libpackage/config
 
 go 1.23.0
-
-require gopkg.in/yaml.v3 v3.0.1
 
 require (
 	github.com/kr/pretty v0.3.1 // indirect

@@ -1,3 +1,3 @@
-module github.com/PlatformCore/Foundation/core
+module github.com/PlatformCore/libpackage/core
 
 go 1.23.0

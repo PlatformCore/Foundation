@@ -1,4 +1,4 @@
-﻿module github.com/PlatformCore/Foundation/observability/obslib
+module github.com/PlatformCore/libpackage/observability/obslib
 
 go 1.22
 

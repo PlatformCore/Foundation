@@ -16,9 +16,9 @@ import (
 	semconv "go.opentelemetry.io/otel/semconv/v1.21.0"
 	"go.uber.org/zap"
 
-	"github.com/PlatformCore/Foundation/middleware/ids"
-	"github.com/PlatformCore/Foundation/middleware/propagation"
-	obttrace "github.com/PlatformCore/Foundation/middleware/trace"
+	"github.com/PlatformCore/libpackage/middleware/ids"
+	"github.com/PlatformCore/libpackage/middleware/propagation"
+	obttrace "github.com/PlatformCore/libpackage/middleware/trace"
 )
 
 // ─── Middleware Type ──────────────────────────────────────────────────────────

@@ -1,8 +1,6 @@
-module github.com/PlatformCore/Foundation/validation
+module github.com/PlatformCore/libpackage/validation
 
-go 1.25.0
-
-require github.com/gin-gonic/gin v1.12.0
+go 1.23.0
 
 require (
 	github.com/bytedance/gopkg v0.1.3 // indirect

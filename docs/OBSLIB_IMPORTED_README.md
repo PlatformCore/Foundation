@@ -1,4 +1,4 @@
-﻿# enterprise/obslib — Enterprise Observability Library
+# enterprise/obslib — Enterprise Observability Library
 
 Production-grade, **zero-framework** shared library for Go microservices at Google/Netflix/Uber scale.  
 Handles ID generation, cross-process propagation, distributed tracing, Prometheus metrics,
@@ -259,7 +259,7 @@ WithPropagation → WithRecovery → WithRetry → WithObservability → Handler
 ## Installation
 
 ```bash
-go get github.com/PlatformCore/Foundation/observability/obslib
+go get github.com/PlatformCore/libpackage/observability/obslib
 ```
 
 ## License
