@@ -21,7 +21,7 @@ func main() {
 	// â”€â”€ 1. Token Bucket â€” per-IP rate limiting â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 	rateLimiter := resilience.NewMultiKeyTokenBucket(resilience.TokenBucketConfig{
 		Name:        "api-ratelimit",
-		Rate:        100,  // 100 req/s per key
+		Rate:        100, // 100 req/s per key
 		Burst:       200,
 		WaitOnEmpty: false,
 		OnThrottle: func(name string, wait time.Duration) {
@@ -77,9 +77,9 @@ func main() {
 
 	// â”€â”€ 7. Deadline Enforcer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 	deadlineEnforcer := resilience.NewDeadlineEnforcer(resilience.DeadlineConfig{
-		Name:    "api-deadline",
-		Hard:    2 * time.Second,
-		Soft:    1500 * time.Millisecond,
+		Name: "api-deadline",
+		Hard: 2 * time.Second,
+		Soft: 1500 * time.Millisecond,
 		OnSoftBreach: func(name string, elapsed, budget time.Duration) {
 			log.Printf("[SOFT DEADLINE] %s elapsed=%s remaining=%s", name, elapsed, budget)
 		},
@@ -112,10 +112,10 @@ func main() {
 
 	// â”€â”€ 10. Backpressure â€” protect write pipeline â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 	bp := resilience.NewBackpressureController[string](resilience.BackpressureConfig{
-		Name:           "write-pipeline",
-		HighWatermark:  500,
-		LowWatermark:   100,
-		Strategy:       resilience.BackpressureDropOldest,
+		Name:          "write-pipeline",
+		HighWatermark: 500,
+		LowWatermark:  100,
+		Strategy:      resilience.BackpressureDropOldest,
 		OnPressureOn: func(name string, queueLen int) {
 			log.Printf("[BACKPRESSURE ON] %s qlen=%d", name, queueLen)
 		},
@@ -160,8 +160,8 @@ func main() {
 		CheckTimeout:         3 * time.Second,
 		ConsecutiveFailures:  3,
 		ConsecutiveSuccesses: 2,
-		DegradedThreshold:   0.2,
-		UnhealthyThreshold:  0.5,
+		DegradedThreshold:    0.2,
+		UnhealthyThreshold:   0.5,
 		OnStatusChange: func(name string, old, new resilience.HealthStatus) {
 			log.Printf("[HEALTH] %s: %s â†’ %s", name, old, new)
 		},
@@ -263,5 +263,3 @@ func main() {
 	fmt.Printf("Health:    %s\n", supervisor.Report().Summary())
 	fmt.Printf("RateKeys:  %d\n", rateLimiter.KeyCount())
 }
-
-

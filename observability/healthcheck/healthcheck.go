@@ -147,5 +147,3 @@ func handler(reg *Registry, kind string) http.Handler {
 		})
 	})
 }
-
-

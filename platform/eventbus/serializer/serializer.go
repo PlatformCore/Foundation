@@ -19,5 +19,3 @@ func (s Serializer) Unmarshal(data []byte, v any) error {
 	}
 	return codec.Unmarshal(data, v)
 }
-
-

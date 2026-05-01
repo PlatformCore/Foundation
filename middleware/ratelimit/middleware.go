@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strconv"
 
-	rl "github.com/PlatformCore/libpackage/ratelimit"
+	rl "github.com/PlatformCore/libpackage/resilience/ratelimit"
 	"github.com/PlatformCore/libpackage/transport/core"
 )
 

@@ -145,11 +145,11 @@ func (e *BaseError) WithMeta(key string, value any) *BaseError {
 	return e
 }
 
-func (e *BaseError) GetMeta() Meta      { return e.meta }
-func (e *BaseError) Stack() StackTrace  { return e.stack }
-func (e *BaseError) Unwrap() error      { return e.cause }
-func (e *BaseError) HTTPStatus() int    { return e.Category.HTTPStatus() }
-func (e *BaseError) HTTPCode() int      { return e.Category.HTTPStatus() }
+func (e *BaseError) GetMeta() Meta        { return e.meta }
+func (e *BaseError) Stack() StackTrace    { return e.stack }
+func (e *BaseError) Unwrap() error        { return e.cause }
+func (e *BaseError) HTTPStatus() int      { return e.Category.HTTPStatus() }
+func (e *BaseError) HTTPCode() int        { return e.Category.HTTPStatus() }
 func (e *BaseError) CategoryName() string { return string(e.Category) }
 
 func (e *BaseError) Error() string {

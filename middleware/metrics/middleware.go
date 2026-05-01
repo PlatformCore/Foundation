@@ -3,7 +3,7 @@ package metrics
 import (
 	"time"
 
-	gometrics "github.com/PlatformCore/libpackage/observability/gometrics"
+	gometrics "github.com/PlatformCore/libpackage/observability/metrics"
 	"github.com/PlatformCore/libpackage/transport/core"
 )
 

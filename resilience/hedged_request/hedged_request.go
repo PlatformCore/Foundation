@@ -101,7 +101,7 @@ func (m *hedgeMetrics) HedgeRate() float64 {
 // HedgedResult carries the response from the winning request.
 type HedgedResult struct {
 	Value      any
-	HedgeIndex int           // 0 = original, >0 = hedge number
+	HedgeIndex int // 0 = original, >0 = hedge number
 	Latency    time.Duration
 }
 

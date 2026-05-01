@@ -1,3 +1,7 @@
 package replay
 
-type Selector struct { Topic string; Key string; TraceID string }
+type Selector struct {
+	Topic   string
+	Key     string
+	TraceID string
+}

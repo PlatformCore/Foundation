@@ -39,12 +39,12 @@ type batchEntry[T any] struct {
 // Useful for reducing per-item overhead (DB inserts, API calls, Kafka produce).
 // Thread-safe. All submitters receive the batch error (fan-out error delivery).
 type Batcher[T any] struct {
-	cfg    BatcherConfig[T]
+	cfg     BatcherConfig[T]
 	entryCh chan batchEntry[T]
-	ctx    context.Context
-	cancel context.CancelFunc
-	wg     sync.WaitGroup
-	once   sync.Once
+	ctx     context.Context
+	cancel  context.CancelFunc
+	wg      sync.WaitGroup
+	once    sync.Once
 
 	// metrics
 	submitted atomic.Int64

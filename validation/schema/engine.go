@@ -9,11 +9,14 @@ import (
 	"strings"
 )
 
-type Engine struct{}
+type SchemaValidatorEngine struct{}
 
-func NewEngine() *Engine { return &Engine{} }
+// Engine is kept as a compatibility alias. Prefer SchemaValidatorEngine to avoid confusing it with plugin runtime engines.
+type Engine = SchemaValidatorEngine
 
-func (e *Engine) Validate(v any) error {
+func NewEngine() *SchemaValidatorEngine { return &SchemaValidatorEngine{} }
+
+func (e *SchemaValidatorEngine) Validate(v any) error {
 	return ValidateStruct(v)
 }
 

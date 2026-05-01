@@ -32,13 +32,13 @@ This repository follows a domain-first Go module layout:
 - `github.com/PlatformCore/libpackage/core/errors/goerror_compat`
 - `github.com/PlatformCore/libpackage/observability/logging/gologger`
 - `github.com/PlatformCore/libpackage/observability/gometrics`
-- `github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit`
+- `github.com/PlatformCore/libpackage/resilience/ratelimit/compat/goratelimit`
 - `github.com/PlatformCore/libpackage/resilience/retry/goretry`
 - `github.com/PlatformCore/libpackage/security/sanitizer/gosanitizer`
 - `github.com/PlatformCore/libpackage/resilience/timeout/gotimeout`
 - `github.com/PlatformCore/libpackage/observability/tracing/gotracing`
 - `github.com/driftappdev/logmid/logging-middleware`
-- `github.com/PlatformCore/libpackage/ratelimit`
+- `github.com/PlatformCore/libpackage/resilience/ratelimit`
 - `github.com/PlatformCore/libpackage/core/result_legacy`
 - `github.com/PlatformCore/libpackage/security/encryption`
 - `github.com/PlatformCore/libpackage/security/hash`
@@ -58,7 +58,7 @@ This repository follows a domain-first Go module layout:
 - `github.com/PlatformCore/libpackage/core/constants`
 - `github.com/PlatformCore/libpackage/core/context`
 - `github.com/PlatformCore/libpackage/core/errors`
-- `github.com/PlatformCore/libpackage/core/logger`
+- `github.com/PlatformCore/libpackage/observability/logging`
 - `github.com/PlatformCore/libpackage/core/result`
 - `github.com/PlatformCore/libpackage/core/types`
 - `github.com/PlatformCore/libpackage/core/utils`

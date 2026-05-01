@@ -1,4 +1,4 @@
-package gocontainer
+package container
 
 import (
 	"fmt"

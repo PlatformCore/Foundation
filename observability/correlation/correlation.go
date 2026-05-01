@@ -1,4 +1,4 @@
-package gocorrelation
+package correlation
 
 import (
 	"context"

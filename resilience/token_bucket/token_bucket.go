@@ -39,9 +39,9 @@ type TokenBucket struct {
 	lastFill time.Time
 
 	// metrics
-	allowed  atomic.Int64
+	allowed   atomic.Int64
 	throttled atomic.Int64
-	waited   atomic.Int64
+	waited    atomic.Int64
 }
 
 // NewTokenBucket creates a new TokenBucket.

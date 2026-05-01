@@ -55,14 +55,14 @@ type WorkQueueConfig struct {
 // WorkQueue is a bounded, multi-worker task queue with optional dynamic scaling,
 // panic recovery, and graceful drain.
 type WorkQueue[T any] struct {
-	cfg      WorkQueueConfig
-	fn       WorkFunc[T]
-	queue    chan WorkItem[T]
-	wg       sync.WaitGroup
-	once     sync.Once
-	ctx      context.Context
-	cancel   context.CancelFunc
-	mu       sync.Mutex
+	cfg    WorkQueueConfig
+	fn     WorkFunc[T]
+	queue  chan WorkItem[T]
+	wg     sync.WaitGroup
+	once   sync.Once
+	ctx    context.Context
+	cancel context.CancelFunc
+	mu     sync.Mutex
 
 	// metrics
 	enqueued  atomic.Int64

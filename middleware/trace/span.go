@@ -221,5 +221,3 @@ func SpanIDFromContext(ctx context.Context) string {
 	}
 	return ids.GetSpanID(ctx).String()
 }
-
-

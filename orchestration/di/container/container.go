@@ -99,5 +99,3 @@ func MustResolve[T any](ctx context.Context, c *Container, name string) T {
 	}
 	return out
 }
-
-

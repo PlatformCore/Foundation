@@ -9,5 +9,3 @@ import (
 type Writer interface {
 	Write(context.Context, subscriber.Message, error) error
 }
-
-

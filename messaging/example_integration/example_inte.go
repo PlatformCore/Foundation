@@ -380,4 +380,3 @@ func (p *ServicePipeline) RunUntilSignal() {
 	p.log.Info("pipeline: received signal, shutting down", "signal", sig.String())
 	p.Close()
 }
-

@@ -44,10 +44,10 @@ type DeadlineEnforcer struct {
 	cfg DeadlineConfig
 
 	// metrics
-	calls      atomic.Int64
+	calls        atomic.Int64
 	hardBreaches atomic.Int64
 	softBreaches atomic.Int64
-	successes  atomic.Int64
+	successes    atomic.Int64
 }
 
 // NewDeadlineEnforcer creates a new DeadlineEnforcer.

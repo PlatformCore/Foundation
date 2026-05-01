@@ -12,10 +12,10 @@ import (
 type HealthStatus int32
 
 const (
-	StatusUnknown  HealthStatus = iota
-	StatusHealthy               // all checks passing
-	StatusDegraded              // some checks failing but service still operational
-	StatusUnhealthy             // critical failure; service should not receive traffic
+	StatusUnknown   HealthStatus = iota
+	StatusHealthy                // all checks passing
+	StatusDegraded               // some checks failing but service still operational
+	StatusUnhealthy              // critical failure; service should not receive traffic
 )
 
 func (s HealthStatus) String() string {
@@ -68,31 +68,31 @@ type HealthSupervisorConfig struct {
 
 // registeredCheck holds a check and its running state.
 type registeredCheck struct {
-	name      string
-	fn        HealthCheck
-	critical  bool // if true, failure → Unhealthy immediately
+	name     string
+	fn       HealthCheck
+	critical bool // if true, failure → Unhealthy immediately
 
-	mu             sync.Mutex
-	lastResult     HealthCheckResult
-	consecFails    int
-	consecSucc     int
-	failing        bool // hysteresis state
+	mu          sync.Mutex
+	lastResult  HealthCheckResult
+	consecFails int
+	consecSucc  int
+	failing     bool // hysteresis state
 }
 
 // HealthSupervisor manages a pool of health checks, aggregates status,
 // and provides /healthz-style endpoint data. It uses hysteresis to avoid
 // flapping between states.
 type HealthSupervisor struct {
-	cfg     HealthSupervisorConfig
-	checks  []*registeredCheck
-	mu      sync.RWMutex
-	status  atomic.Int32
-	ctx     context.Context
-	cancel  context.CancelFunc
-	wg      sync.WaitGroup
+	cfg    HealthSupervisorConfig
+	checks []*registeredCheck
+	mu     sync.RWMutex
+	status atomic.Int32
+	ctx    context.Context
+	cancel context.CancelFunc
+	wg     sync.WaitGroup
 
 	// metrics
-	totalChecks atomic.Int64
+	totalChecks  atomic.Int64
 	failedChecks atomic.Int64
 	stateChanges atomic.Int64
 }

@@ -16,5 +16,3 @@ func (c *Client) Flag(key string) (types.Flag, bool) {
 	}
 	return c.provider.Get(key)
 }
-
-

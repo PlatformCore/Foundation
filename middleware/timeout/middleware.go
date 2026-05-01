@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	gotimeout "github.com/PlatformCore/libpackage/resilience/timeout/gotimeout"
+	timeoutcore "github.com/PlatformCore/libpackage/resilience/timeout"
 	"github.com/PlatformCore/libpackage/transport/core"
 )
 
@@ -17,7 +17,7 @@ func WithOptions(opts Options) core.Middleware {
 			if opts.Duration <= 0 {
 				return next(ctx)
 			}
-			return gotimeout.Do(ctx.Context, opts.Duration, func(cctx context.Context) error { ctx.WithContext(cctx); return next(ctx) })
+			return timeout.Do(ctx.Context, opts.Duration, func(cctx context.Context) error { ctx.WithContext(cctx); return next(ctx) })
 		}
 	}
 }

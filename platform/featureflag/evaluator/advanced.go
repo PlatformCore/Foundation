@@ -52,5 +52,3 @@ func (e Evaluator) Variant(ctx context.Context, key string, subject Subject, fal
 	}
 	return fallback
 }
-
-

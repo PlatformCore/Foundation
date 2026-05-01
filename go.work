@@ -2,8 +2,10 @@ go 1.23.0
 
 use (
 	./adapter
+	./cache
 	./clients
 	./config
+	./coordination
 	./core
 	./messaging
 	./middleware
@@ -12,8 +14,7 @@ use (
 	./persistence
 	./platform
 	./plugins
-	./ratelimit
-	./resilience
+		./resilience
 	./runtime
 	./security
 	./tools

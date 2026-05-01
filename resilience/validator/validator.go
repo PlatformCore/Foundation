@@ -1,6 +1,6 @@
-// Package govalidator provides production-grade struct and field validation
+// Package validator provides production-grade struct and field validation
 // with struct tags, custom rules, i18n error messages, and composable validators.
-package govalidator
+package validator
 
 import (
 	"errors"
@@ -556,7 +556,7 @@ func ValidateStruct(s interface{}) error {
 		rv = rv.Elem()
 	}
 	if rv.Kind() != reflect.Struct {
-		return errors.New("govalidator: input must be a struct or pointer to struct")
+		return errors.New("validator: input must be a struct or pointer to struct")
 	}
 	rt := rv.Type()
 	var errs ValidationErrors

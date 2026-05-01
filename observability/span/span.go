@@ -1,4 +1,4 @@
-package gospan
+package span
 
 import (
 	"context"

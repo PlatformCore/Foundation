@@ -5,7 +5,6 @@ go 1.23.0
 require (
 	github.com/PlatformCore/libpackage/messaging v0.0.0
 	github.com/PlatformCore/libpackage/observability v0.0.0
-	github.com/PlatformCore/libpackage/ratelimit v0.0.0
 	github.com/PlatformCore/libpackage/resilience v0.0.0
 	github.com/PlatformCore/libpackage/transport v0.0.0
 	github.com/golang-jwt/jwt/v5 v5.3.1
@@ -21,6 +20,5 @@ require (
 
 replace github.com/PlatformCore/libpackage/transport => ../transport
 replace github.com/PlatformCore/libpackage/observability => ../observability
-replace github.com/PlatformCore/libpackage/ratelimit => ../ratelimit
-replace github.com/PlatformCore/libpackage/resilience => ../resilience
 replace github.com/PlatformCore/libpackage/messaging => ../messaging
+replace github.com/PlatformCore/libpackage/resilience => ../resilience

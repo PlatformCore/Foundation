@@ -13,7 +13,7 @@ go get github.com/PlatformCore/libpackage/core/result_legacy@latest
 go get github.com/PlatformCore/libpackage/core/context@latest
 go get github.com/PlatformCore/libpackage/core/constants@latest
 go get github.com/PlatformCore/libpackage/core/errors@latest
-go get github.com/PlatformCore/libpackage/core/logger@latest
+go get github.com/PlatformCore/libpackage/observability/logging@latest
 go get github.com/driftappdev/logmid/logging-middleware@latest
 go get github.com/PlatformCore/libpackage/security/jwt@latest
 ```
@@ -34,7 +34,7 @@ go get github.com/PlatformCore/libpackage/security/jwt@latest
 - `github.com/PlatformCore/libpackage/observability/logging/gologger`
 - `github.com/PlatformCore/libpackage/observability/gometrics`
 - `github.com/PlatformCore/libpackage/resilience/pagination`
-- `github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit`
+- `github.com/PlatformCore/libpackage/resilience/ratelimit/compat/goratelimit`
 - `github.com/PlatformCore/libpackage/resilience/retry/goretry`
 - `github.com/PlatformCore/libpackage/security/sanitizer/gosanitizer`
 - `github.com/PlatformCore/libpackage/resilience/timeout/gotimeout`

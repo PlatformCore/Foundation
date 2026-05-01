@@ -961,4 +961,3 @@ func matchGlob(pattern, s string) bool {
 	matched, _ := filepath.Match(pattern, s)
 	return matched
 }
-

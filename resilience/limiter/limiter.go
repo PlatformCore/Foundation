@@ -32,8 +32,8 @@ type LimiterEvent struct {
 // Limiter is a semaphore-based concurrency limiter with observability,
 // queuing, and timeout support. Safe for concurrent use.
 type Limiter struct {
-	cfg     LimiterConfig
-	sem     chan struct{}
+	cfg      LimiterConfig
+	sem      chan struct{}
 	inFlight atomic.Int64
 	waiting  atomic.Int64
 	rejected atomic.Int64

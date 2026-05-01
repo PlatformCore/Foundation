@@ -11,7 +11,7 @@ Examples:
 ```bash
 go get github.com/PlatformCore/libpackage/platform/eventbus@v0.1.0
 go get github.com/PlatformCore/libpackage/platform/servicemesh@v0.1.0
-go get github.com/PlatformCore/libpackage/ratelimit@v1.0.0
+go get github.com/PlatformCore/libpackage/resilience/ratelimit@v1.0.0
 go get github.com/PlatformCore/libpackage/security@v1.0.0
 ```
 

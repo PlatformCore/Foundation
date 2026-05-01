@@ -26,7 +26,7 @@ Generated for PlatformCore/libpackage.
 - `clients/go.mod` -> `github.com/PlatformCore/libpackage/clients`
 - `security/go.mod` -> `github.com/PlatformCore/libpackage/security`
 - `resilience/go.mod` -> `github.com/PlatformCore/libpackage/resilience`
-- `ratelimit/go.mod` -> `github.com/PlatformCore/libpackage/ratelimit`
+- `ratelimit/go.mod` -> `github.com/PlatformCore/libpackage/resilience/ratelimit`
 - `plugins/go.mod` -> `github.com/PlatformCore/libpackage/plugins`
 - `tools/go.mod` -> `github.com/PlatformCore/libpackage/tools`
 - `orchestration/go.mod` -> `github.com/PlatformCore/libpackage/orchestration`

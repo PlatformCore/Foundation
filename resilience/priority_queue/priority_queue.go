@@ -11,10 +11,10 @@ import (
 
 // PQItem is an item in the priority queue.
 type PQItem[T any] struct {
-	Value    T
-	Priority int       // higher value = higher priority
+	Value      T
+	Priority   int // higher value = higher priority
 	EnqueuedAt time.Time
-	index    int       // maintained by heap.Interface
+	index      int // maintained by heap.Interface
 }
 
 // pqHeap is the internal heap implementing heap.Interface.
@@ -73,10 +73,10 @@ type PriorityQueue[T any] struct {
 	mu   sync.Mutex
 	cond *sync.Cond
 
-	enqueued  atomic.Int64
-	dequeued  atomic.Int64
-	evicted   atomic.Int64
-	rejected  atomic.Int64
+	enqueued atomic.Int64
+	dequeued atomic.Int64
+	evicted  atomic.Int64
+	rejected atomic.Int64
 }
 
 // NewPriorityQueue creates and initializes a PriorityQueue.

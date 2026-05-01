@@ -508,4 +508,3 @@ func WithLock(ctx context.Context, locker Locker, key string, fn func(ctx contex
 	defer lock.Release(context.Background()) //nolint:errcheck
 	return fn(ctx, lock.Token())
 }
-

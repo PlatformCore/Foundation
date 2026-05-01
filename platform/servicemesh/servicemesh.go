@@ -592,4 +592,3 @@ func (m *Mesh) HealthCheck(_ context.Context) map[string]common.HealthResult {
 	}
 	return results
 }
-

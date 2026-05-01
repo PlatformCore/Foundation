@@ -12,7 +12,7 @@ Total modules (go.mod): 83
 - security/auth stack (10 modules)
   - github.com/driftappdev/auth, github.com/PlatformCore/libpackage/security/auth_middleware/goauth, github.com/PlatformCore/libpackage/security, github.com/PlatformCore/libpackage/security/encryption, github.com/PlatformCore/libpackage/security/hash, github.com/PlatformCore/libpackage/security/jwt, github.com/PlatformCore/libpackage/security/oauth2, github.com/PlatformCore/libpackage/security/permission, github.com/PlatformCore/libpackage/security/policy, github.com/PlatformCore/libpackage/security/threatdefense
 - rate-limit stack (4 modules)
-  - github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit, github.com/PlatformCore/libpackage/ratelimit, github.com/PlatformCore/libpackage/ratelimit/enterprise, github.com/PlatformCore/libpackage/ratelimit/memory_store
+  - github.com/PlatformCore/libpackage/resilience/ratelimit/compat/goratelimit, github.com/PlatformCore/libpackage/resilience/ratelimit, github.com/PlatformCore/libpackage/resilience/ratelimit/enterprise, github.com/PlatformCore/libpackage/resilience/ratelimit/memory_store
 - resilience stack (4 modules)
   - github.com/PlatformCore/libpackage/resilience/circuitbreaker/gocircuit, github.com/PlatformCore/libpackage/tools/lib_word/flowguard-ultimate, github.com/PlatformCore/libpackage/resilience, github.com/PlatformCore/libpackage/resilience/validator
 - timeout/deadline stack (2 modules)
@@ -191,7 +191,7 @@ Total modules (go.mod): 83
 - Files:
   - metrics.go
 
-### github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit
+### github.com/PlatformCore/libpackage/resilience/ratelimit/compat/goratelimit
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\goratelimit
 - Role: rate limiting / throttling
 - Go files: 6
@@ -520,14 +520,14 @@ Total modules (go.mod): 83
 - Files:
   - common.go
 
-### github.com/PlatformCore/libpackage/plugins/engine
+### github.com/PlatformCore/libpackage/plugins/runtimeengine
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\engine
 - Role: runtime/platform/integration
 - Go files: 1
 - Files:
   - engine.go
 
-### github.com/PlatformCore/libpackage/ratelimit
+### github.com/PlatformCore/libpackage/resilience/ratelimit
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\ratelimitX
 - Role: rate limiting / throttling
 - Go files: 9
@@ -542,14 +542,14 @@ Total modules (go.mod): 83
   - redis_store\redis_store.go
   - result\result.go
 
-### github.com/PlatformCore/libpackage/ratelimit/enterprise
+### github.com/PlatformCore/libpackage/resilience/ratelimit/enterprise
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\enterprise
 - Role: rate limiting / throttling
 - Go files: 1
 - Files:
   - ratelimit.go
 
-### github.com/PlatformCore/libpackage/ratelimit/memory_store
+### github.com/PlatformCore/libpackage/resilience/ratelimit/memory_store
 - Path: C:\Users\AdminWC\Dift App project\Project-Production-Ready\libpackage\ratelimitX\memory_store
 - Role: rate limiting / throttling
 - Go files: 1

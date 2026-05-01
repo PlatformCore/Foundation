@@ -1,4 +1,4 @@
-package gofeatureclient
+package platformclient
 
 import "context"
 

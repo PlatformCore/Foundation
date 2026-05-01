@@ -40,26 +40,26 @@ import (
 //	// In your handler:
 //	mirror.Capture(CapturedRequest{...})
 type TrafficMirror struct {
-	cfg      TrafficMirrorConfig
-	buffer   chan *CapturedRequest
-	metrics  *mirrorMetrics
-	stopCh   chan struct{}
-	wg       sync.WaitGroup
-	sampler  *tokenBucketSampler
-	started  int32
-	replay   *replayEngine
+	cfg     TrafficMirrorConfig
+	buffer  chan *CapturedRequest
+	metrics *mirrorMetrics
+	stopCh  chan struct{}
+	wg      sync.WaitGroup
+	sampler *tokenBucketSampler
+	started int32
+	replay  *replayEngine
 }
 
 // CapturedRequest is a snapshot of an inbound request for mirroring/replay.
 type CapturedRequest struct {
-	ID          string            // Unique request ID
-	Method      string
-	URL         string
-	Headers     map[string]string
-	Body        []byte
-	CapturedAt  time.Time
-	SourceNode  string
-	Metadata    map[string]any
+	ID         string // Unique request ID
+	Method     string
+	URL        string
+	Headers    map[string]string
+	Body       []byte
+	CapturedAt time.Time
+	SourceNode string
+	Metadata   map[string]any
 }
 
 // CapturedResponse pairs a response with its request for diff analysis.
@@ -139,12 +139,12 @@ func (c *TrafficMirrorConfig) setDefaults() {
 }
 
 type mirrorMetrics struct {
-	captured  int64
-	dropped   int64
-	sent      int64
-	sinkErr   int64
-	replayed  int64
-	filtered  int64
+	captured int64
+	dropped  int64
+	sent     int64
+	sinkErr  int64
+	replayed int64
+	filtered int64
 }
 
 // NewTrafficMirror creates a TrafficMirror. Call Start() before Capture().
@@ -549,9 +549,9 @@ func (s *InMemoryReplayStore) Delete(_ []string) error { return nil }
 // DiscardSink drops all mirrored requests silently.
 type DiscardSink struct{}
 
-func (d *DiscardSink) Name() string                                    { return "discard" }
+func (d *DiscardSink) Name() string                                     { return "discard" }
 func (d *DiscardSink) Send(_ context.Context, _ *CapturedRequest) error { return nil }
-func (d *DiscardSink) Close() error                                    { return nil }
+func (d *DiscardSink) Close() error                                     { return nil }
 
 // ChannelSink delivers captured requests to a Go channel.
 type ChannelSink struct {
@@ -564,9 +564,9 @@ func NewChannelSink(name string, size int) *ChannelSink {
 	return &ChannelSink{name: name, ch: make(chan *CapturedRequest, size)}
 }
 
-func (c *ChannelSink) Name() string { return c.name }
+func (c *ChannelSink) Name() string                { return c.name }
 func (c *ChannelSink) Ch() <-chan *CapturedRequest { return c.ch }
-func (c *ChannelSink) Close() error { close(c.ch); return nil }
+func (c *ChannelSink) Close() error                { close(c.ch); return nil }
 func (c *ChannelSink) Send(_ context.Context, req *CapturedRequest) error {
 	select {
 	case c.ch <- req:

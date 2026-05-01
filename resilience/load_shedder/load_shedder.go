@@ -59,13 +59,13 @@ type LoadShedder struct {
 	lastChg time.Time
 
 	// latency tracking (EWMA)
-	latencyEWMA  float64
-	ewmaAlpha    float64
+	latencyEWMA float64
+	ewmaAlpha   float64
 
 	// metrics
-	accepted atomic.Int64
-	shed     atomic.Int64
-	total    atomic.Int64
+	accepted    atomic.Int64
+	shed        atomic.Int64
+	total       atomic.Int64
 	activations atomic.Int64
 }
 

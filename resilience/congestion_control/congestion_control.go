@@ -34,13 +34,13 @@ import (
 //	if err != nil { /* shed load */ }
 //	defer token.Release(success)
 type CongestionController struct {
-	cfg     CongestionConfig
-	mu      sync.Mutex
-	limit   int64
-	inflight int64
-	metrics *ccMetrics
+	cfg        CongestionConfig
+	mu         sync.Mutex
+	limit      int64
+	inflight   int64
+	metrics    *ccMetrics
 	rttTracker *rttTracker
-	sample  congestionSample
+	sample     congestionSample
 }
 
 // CongestionAlgorithm selects the limit-adjustment algorithm.
@@ -54,15 +54,15 @@ const (
 
 // CongestionConfig configures the CongestionController.
 type CongestionConfig struct {
-	Algorithm   CongestionAlgorithm
-	InitLimit   int64
-	MinLimit    int64
-	MaxLimit    int64
-	Timeout     time.Duration
+	Algorithm CongestionAlgorithm
+	InitLimit int64
+	MinLimit  int64
+	MaxLimit  int64
+	Timeout   time.Duration
 
 	// AIMD parameters.
-	AIMDIncrease  float64 // additive increase per RTT (default: 1)
-	AIMDDecrease  float64 // multiplicative decrease on congestion (default: 0.9)
+	AIMDIncrease float64 // additive increase per RTT (default: 1)
+	AIMDDecrease float64 // multiplicative decrease on congestion (default: 0.9)
 
 	// Vegas / Gradient2 parameters.
 	// Gradient2ProbeMultiplier controls how aggressively the limit grows.
@@ -115,20 +115,20 @@ type congestionSample struct {
 }
 
 type ccMetrics struct {
-	acquired    int64
-	dropped     int64
-	timeouts    int64
-	limitUp     int64
-	limitDown   int64
-	totalRTTNs  int64
+	acquired   int64
+	dropped    int64
+	timeouts   int64
+	limitUp    int64
+	limitDown  int64
+	totalRTTNs int64
 }
 
 type rttTracker struct {
-	minRTT    float64 // nanoseconds, EWMA
+	minRTT     float64 // nanoseconds, EWMA
 	currentRTT float64
-	alpha     float64 // smoothing factor
-	mu        sync.Mutex
-	samples   int64
+	alpha      float64 // smoothing factor
+	mu         sync.Mutex
+	samples    int64
 }
 
 func newRTTTracker(alpha float64) *rttTracker {
@@ -364,15 +364,15 @@ func (c *CongestionController) adjustGradient2() {
 
 // CCMetricsSnapshot is a point-in-time view of congestion controller metrics.
 type CCMetricsSnapshot struct {
-	Acquired    int64
-	Dropped     int64
-	LimitUpward int64
-	LimitDown   int64
+	Acquired     int64
+	Dropped      int64
+	LimitUpward  int64
+	LimitDown    int64
 	CurrentLimit int64
-	Inflight    int64
-	AvgRTTMs    float64
-	DropRate    float64
-	Utilization float64
+	Inflight     int64
+	AvgRTTMs     float64
+	DropRate     float64
+	Utilization  float64
 }
 
 // Metrics returns a snapshot.

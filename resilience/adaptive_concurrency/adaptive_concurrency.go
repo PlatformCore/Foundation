@@ -49,21 +49,21 @@ type AdaptiveConcurrencyConfig struct {
 // (AIMD, Gradient, or Vegas) to find the optimal limit without prior
 // capacity knowledge.
 type AdaptiveConcurrencyLimiter struct {
-	cfg     AdaptiveConcurrencyConfig
-	mu      sync.Mutex
-	limit   int
+	cfg      AdaptiveConcurrencyConfig
+	mu       sync.Mutex
+	limit    int
 	inflight int
-	sem     chan struct{}
+	sem      chan struct{}
 
 	// RTT tracking (per window)
-	windowStart  time.Time
-	windowRTTs   []float64
-	minRTT       float64 // long-running minimum RTT (ms)
-	rttEWMA      float64
+	windowStart time.Time
+	windowRTTs  []float64
+	minRTT      float64 // long-running minimum RTT (ms)
+	rttEWMA     float64
 
 	// metrics
-	acquired  atomic.Int64
-	rejected  atomic.Int64
+	acquired   atomic.Int64
+	rejected   atomic.Int64
 	limitBumps atomic.Int64
 	limitDrops atomic.Int64
 

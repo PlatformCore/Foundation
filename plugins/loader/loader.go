@@ -85,4 +85,3 @@ func (s Service) CloseAll(ctx context.Context) error {
 	}
 	return CloseAll(ctx, s.All())
 }
-

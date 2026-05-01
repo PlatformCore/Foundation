@@ -62,7 +62,7 @@
 - `github.com/PlatformCore/libpackage/platform/servicemesh`: service mesh integration
 - `github.com/PlatformCore/libpackage/plugins`: plugin umbrella
 - `github.com/PlatformCore/libpackage/plugins/common`: shared plugin contracts/util
-- `github.com/PlatformCore/libpackage/plugins/engine`: plugin engine/runtime
+- `github.com/PlatformCore/libpackage/plugins/runtimeengine`: plugin engine/runtime
 - `github.com/PlatformCore/libpackage/platform/eventbus`: event bus abstractions
 
 ## 8) Resilience / Rate limiting
@@ -74,9 +74,9 @@
 - `github.com/PlatformCore/libpackage/resilience/pagination`: pagination helpers
 - `github.com/PlatformCore/libpackage/resilience/cache`: cache resilience helpers
 - `github.com/PlatformCore/libpackage/resilience/circuit`: circuit breaker
-- `github.com/PlatformCore/libpackage/ratelimit`: rate limit umbrella
-- `github.com/PlatformCore/libpackage/ratelimit/memory_store`: memory store for rate limit
-- `github.com/PlatformCore/libpackage/ratelimit/enterprise`: enterprise rate-limit features
+- `github.com/PlatformCore/libpackage/resilience/ratelimit`: rate limit umbrella
+- `github.com/PlatformCore/libpackage/resilience/ratelimit/memory_store`: memory store for rate limit
+- `github.com/PlatformCore/libpackage/resilience/ratelimit/enterprise`: enterprise rate-limit features
 
 ## 9) Middleware
 - `github.com/driftappdev/middleware`: middleware umbrella
@@ -94,7 +94,7 @@
 - `github.com/PlatformCore/libpackage/core/errors/goerror_compat`
 - `github.com/PlatformCore/libpackage/observability/logging/gologger`
 - `github.com/PlatformCore/libpackage/observability/gometrics`
-- `github.com/PlatformCore/libpackage/ratelimit/compat/goratelimit`
+- `github.com/PlatformCore/libpackage/resilience/ratelimit/compat/goratelimit`
 - `github.com/PlatformCore/libpackage/resilience/retry/goretry`
 - `github.com/PlatformCore/libpackage/security/sanitizer/gosanitizer`
 - `github.com/PlatformCore/libpackage/resilience/timeout/gotimeout`
@@ -126,11 +126,11 @@
 - `uow` -> `github.com/PlatformCore/libpackage/persistence/uow`
 - `servicemesh` -> `github.com/PlatformCore/libpackage/platform/servicemesh`
 - `common` -> `github.com/PlatformCore/libpackage/plugins/common`
-- `engine` -> `github.com/PlatformCore/libpackage/plugins/engine`
-- `enterprise` -> `github.com/PlatformCore/libpackage/ratelimit/enterprise`
+- `engine` -> `github.com/PlatformCore/libpackage/plugins/runtimeengine`
+- `enterprise` -> `github.com/PlatformCore/libpackage/resilience/ratelimit/enterprise`
 - `performance` -> `github.com/PlatformCore/libpackage/observability/performance`
 - `sentinelprofiler` -> `github.com/PlatformCore/libpackage/observability/profiler/sentinel`
-- `ratelimitX` -> `github.com/PlatformCore/libpackage/ratelimit`
+- `ratelimitX` -> `github.com/PlatformCore/libpackage/resilience/ratelimit`
 
 ---
 

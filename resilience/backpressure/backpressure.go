@@ -45,12 +45,12 @@ type BackpressureConfig struct {
 // BackpressureController monitors queue depth and enforces flow control.
 // It is designed to wrap any channel-based producer and protect consumers.
 type BackpressureController[T any] struct {
-	cfg         BackpressureConfig
-	queue       []T
-	mu          sync.Mutex
-	pressureOn  bool
-	cond        *sync.Cond
-	closed      bool
+	cfg        BackpressureConfig
+	queue      []T
+	mu         sync.Mutex
+	pressureOn bool
+	cond       *sync.Cond
+	closed     bool
 
 	// metrics
 	submitted atomic.Int64
@@ -241,13 +241,13 @@ func (bc *BackpressureController[T]) IsPressureActive() bool {
 
 // BackpressureStats is a point-in-time snapshot.
 type BackpressureStats struct {
-	Name        string
-	QueueLen    int
-	Submitted   int64
-	Accepted    int64
-	Dropped     int64
-	Pressures   int64
-	PressureOn  bool
+	Name       string
+	QueueLen   int
+	Submitted  int64
+	Accepted   int64
+	Dropped    int64
+	Pressures  int64
+	PressureOn bool
 }
 
 // Stats returns a snapshot.

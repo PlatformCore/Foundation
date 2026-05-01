@@ -236,15 +236,15 @@ func (s *ShadowTrafficRouter) executeShadow(
 
 // ShadowMetricsSnapshot is a point-in-time view of shadow metrics.
 type ShadowMetricsSnapshot struct {
-	PrimaryCalls    int64
-	ShadowFired     int64
-	ShadowDropped   int64
-	ShadowErrors    int64
-	DiffsDetected   int64
-	InflightNow     int64
+	PrimaryCalls        int64
+	ShadowFired         int64
+	ShadowDropped       int64
+	ShadowErrors        int64
+	DiffsDetected       int64
+	InflightNow         int64
 	EffectiveSampleRate float64
-	AvgShadowLatMs  float64
-	DiffRate        float64
+	AvgShadowLatMs      float64
+	DiffRate            float64
 }
 
 // Metrics returns a snapshot.
@@ -350,8 +350,8 @@ func cloneShadowRequest(req *ShadowRequest, bodyOverride []byte) *ShadowRequest 
 // ShadowPool manages a pool of ShadowTrafficRouters keyed by route/service name.
 // Use this when different routes need different sampling rates.
 type ShadowPool struct {
-	mu      sync.RWMutex
-	routers map[string]*ShadowTrafficRouter
+	mu       sync.RWMutex
+	routers  map[string]*ShadowTrafficRouter
 	default_ *ShadowTrafficRouter
 }
 

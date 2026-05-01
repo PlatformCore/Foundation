@@ -1,4 +1,4 @@
-package goversioning
+package versioning
 
 import "strconv"
 

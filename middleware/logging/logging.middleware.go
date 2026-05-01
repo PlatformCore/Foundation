@@ -1,10 +1,10 @@
 //go:build legacy
 // +build legacy
 
-// Package gologmid provides production-grade HTTP logging middleware:
+// Package logging provides production-grade HTTP logging middleware:
 // structured request/response logging, latency tracking, request ID injection,
 // body capture, configurable field extraction, and skip patterns.
-package gologmid
+package logging
 
 import (
 	"bytes"
@@ -39,7 +39,7 @@ func newRequestID() string {
 // ---- Logger interface -------------------------------------------------------
 
 // Logger is the minimal interface expected by the middleware.
-// Compatible with gologger.Logger and any structured logger.
+// Compatible with logging.Logger and any structured logger.
 type Logger interface {
 	Info(msg string, fields ...Field)
 	Warn(msg string, fields ...Field)

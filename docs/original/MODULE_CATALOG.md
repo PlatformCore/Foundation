@@ -30,8 +30,8 @@ count: 100
   install: go get github.com/PlatformCore/libpackage/core/error@latest
 - github.com/PlatformCore/libpackage/core/errors (core/errors)
   install: go get github.com/PlatformCore/libpackage/core/errors@latest
-- github.com/PlatformCore/libpackage/core/logger (core/logger)
-  install: go get github.com/PlatformCore/libpackage/core/logger@latest
+- github.com/PlatformCore/libpackage/observability/logging (core/logger)
+  install: go get github.com/PlatformCore/libpackage/observability/logging@latest
 - github.com/PlatformCore/libpackage/core/result (core/result)
   install: go get github.com/PlatformCore/libpackage/core/result@latest
 - github.com/PlatformCore/libpackage/core/types (core/types)
@@ -150,8 +150,8 @@ count: 100
   install: go get github.com/PlatformCore/libpackage/plugins/manifest@latest
 - github.com/PlatformCore/libpackage/plugins/registry (plugins/registry)
   install: go get github.com/PlatformCore/libpackage/plugins/registry@latest
-- github.com/PlatformCore/libpackage/ratelimit (ratelimit)
-  install: go get github.com/PlatformCore/libpackage/ratelimit@latest
+- github.com/PlatformCore/libpackage/resilience/ratelimit (ratelimit)
+  install: go get github.com/PlatformCore/libpackage/resilience/ratelimit@latest
 - github.com/PlatformCore/libpackage/resilience/cache (resilience/cache)
   install: go get github.com/PlatformCore/libpackage/resilience/cache@latest
 - github.com/PlatformCore/libpackage/resilience/circuit (resilience/circuit)

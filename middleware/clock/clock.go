@@ -22,7 +22,7 @@ func NewReal() Clock { return Real{} }
 // Mock is a controllable clock for testing.
 type Mock struct{ current time.Time }
 
-func NewMock(t time.Time) *Mock        { return &Mock{current: t} }
-func (m *Mock) Now() time.Time         { return m.current }
+func NewMock(t time.Time) *Mock                 { return &Mock{current: t} }
+func (m *Mock) Now() time.Time                  { return m.current }
 func (m *Mock) Since(t time.Time) time.Duration { return m.current.Sub(t) }
-func (m *Mock) Advance(d time.Duration) { m.current = m.current.Add(d) }
+func (m *Mock) Advance(d time.Duration)         { m.current = m.current.Add(d) }

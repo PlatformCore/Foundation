@@ -794,4 +794,3 @@ func (b *FlagBuilder) Build() *Flag {
 func Cond(attribute string, op TargetingRuleOp, value any) TargetingCondition {
 	return TargetingCondition{Attribute: attribute, Operator: op, Value: value}
 }
-

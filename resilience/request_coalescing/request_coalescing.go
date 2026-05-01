@@ -24,11 +24,11 @@ import (
 //	    return db.GetUser(ctx, 42)
 //	})
 type RequestCoalescer struct {
-	cfg     RequestCoalescerConfig
-	mu      sync.Mutex
+	cfg      RequestCoalescerConfig
+	mu       sync.Mutex
 	inflight map[string]*coalescedCall
 	cache    map[string]*cachedResult
-	metrics *coalescerMetrics
+	metrics  *coalescerMetrics
 }
 
 // RequestCoalescerConfig configures the RequestCoalescer.
@@ -83,12 +83,12 @@ type cachedResult struct {
 func (r *cachedResult) isExpired() bool { return time.Now().After(r.expiresAt) }
 
 type coalescerMetrics struct {
-	requests    int64
-	coalesced   int64
-	cacheHits   int64
-	errors      int64
-	panics      int64
-	fullDrops   int64
+	requests  int64
+	coalesced int64
+	cacheHits int64
+	errors    int64
+	panics    int64
+	fullDrops int64
 }
 
 // CoalescerResult wraps the call result with sharing metadata.
@@ -256,12 +256,12 @@ func (c *RequestCoalescer) PurgeExpired() int {
 
 // CoalescerMetricsSnapshot is a point-in-time snapshot of coalescer metrics.
 type CoalescerMetricsSnapshot struct {
-	Requests   int64
-	Coalesced  int64
-	CacheHits  int64
-	Errors     int64
-	Panics     int64
-	FullDrops  int64
+	Requests     int64
+	Coalesced    int64
+	CacheHits    int64
+	Errors       int64
+	Panics       int64
+	FullDrops    int64
 	CoalesceRate float64
 	CacheHitRate float64
 }

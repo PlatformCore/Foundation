@@ -350,8 +350,8 @@ func IsRetryableTemporary(err error, _ int) bool {
 // NotRetryable marks an error as terminal (wraps it so AdaptiveRetry stops).
 type NotRetryable struct{ Cause error }
 
-func (e *NotRetryable) Error() string  { return fmt.Sprintf("not retryable: %v", e.Cause) }
-func (e *NotRetryable) Unwrap() error  { return e.Cause }
+func (e *NotRetryable) Error() string { return fmt.Sprintf("not retryable: %v", e.Cause) }
+func (e *NotRetryable) Unwrap() error { return e.Cause }
 
 // WrapNotRetryable wraps err so the retry engine won't retry it.
 func WrapNotRetryable(err error) error { return &NotRetryable{Cause: err} }

@@ -167,9 +167,9 @@ type quorumMetrics struct {
 
 // QuorumReadResult is the result of a quorum read.
 type QuorumReadResult struct {
-	Value       *VersionedValue
-	RespondedN  int  // number of nodes that responded
-	ConflictN   int  // number of nodes with conflicting versions
+	Value        *VersionedValue
+	RespondedN   int // number of nodes that responded
+	ConflictN    int // number of nodes with conflicting versions
 	ReadRepaired bool
 }
 
@@ -288,8 +288,8 @@ func (q *QuorumExecutor) Write(ctx context.Context, key string, value *Versioned
 	}
 
 	var (
-		acks     int
-		errs     []error
+		acks      int
+		errs      []error
 		respCount int
 	)
 
@@ -380,14 +380,14 @@ func (q *QuorumExecutor) NodeHealth() map[string]float64 {
 
 // QuorumMetricsSnapshot is a point-in-time view of quorum metrics.
 type QuorumMetricsSnapshot struct {
-	Reads        int64
-	Writes       int64
-	ReadSuccess  int64
-	WriteSuccess int64
-	ReadFailure  int64
-	WriteFailure int64
-	ReadRepairs  int64
-	ReadSuccessRate float64
+	Reads            int64
+	Writes           int64
+	ReadSuccess      int64
+	WriteSuccess     int64
+	ReadFailure      int64
+	WriteFailure     int64
+	ReadRepairs      int64
+	ReadSuccessRate  float64
 	WriteSuccessRate float64
 }
 

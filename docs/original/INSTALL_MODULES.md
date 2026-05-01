@@ -17,7 +17,7 @@ Total modules: 100
 - go get github.com/PlatformCore/libpackage/core/context@latest
 - go get github.com/PlatformCore/libpackage/core/error@latest
 - go get github.com/PlatformCore/libpackage/core/errors@latest
-- go get github.com/PlatformCore/libpackage/core/logger@latest
+- go get github.com/PlatformCore/libpackage/observability/logging@latest
 - go get github.com/PlatformCore/libpackage/core/result@latest
 - go get github.com/PlatformCore/libpackage/core/types@latest
 - go get github.com/PlatformCore/libpackage/core/utils@latest
@@ -77,7 +77,7 @@ Total modules: 100
 - go get github.com/PlatformCore/libpackage/plugins/loader@latest
 - go get github.com/PlatformCore/libpackage/plugins/manifest@latest
 - go get github.com/PlatformCore/libpackage/plugins/registry@latest
-- go get github.com/PlatformCore/libpackage/ratelimit@latest
+- go get github.com/PlatformCore/libpackage/resilience/ratelimit@latest
 - go get github.com/PlatformCore/libpackage/resilience/cache@latest
 - go get github.com/PlatformCore/libpackage/resilience/circuit@latest
 - go get github.com/PlatformCore/libpackage/resilience/pagination@latest

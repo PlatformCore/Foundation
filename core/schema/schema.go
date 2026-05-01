@@ -1,4 +1,4 @@
-package goschema
+package schema
 
 import (
 	"fmt"

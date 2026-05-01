@@ -13,8 +13,8 @@ import (
 	"github.com/PlatformCore/libpackage/middleware/retry"
 	"github.com/PlatformCore/libpackage/middleware/timeout"
 	obslog "github.com/PlatformCore/libpackage/observability/logging"
-	rl "github.com/PlatformCore/libpackage/ratelimit"
-	goretry "github.com/PlatformCore/libpackage/resilience/retry/goretry"
+	rl "github.com/PlatformCore/libpackage/resilience/ratelimit"
+	goretry "github.com/PlatformCore/libpackage/resilience/retry"
 )
 
 type EnterpriseOptions struct {

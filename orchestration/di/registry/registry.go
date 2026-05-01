@@ -67,5 +67,3 @@ func (r *Registry) All() []provider.Definition {
 	}
 	return out
 }
-
-

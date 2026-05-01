@@ -9,3 +9,6 @@ require (
 	golang.org/x/sys v0.43.0 // indirect
 	golang.org/x/text v0.36.0 // indirect
 )
+
+require github.com/PlatformCore/libpackage/resilience v0.0.0
+replace github.com/PlatformCore/libpackage/resilience => ../resilience

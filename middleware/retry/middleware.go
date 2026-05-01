@@ -3,7 +3,7 @@ package retry
 import (
 	"context"
 
-	goretry "github.com/PlatformCore/libpackage/resilience/retry/goretry"
+	goretry "github.com/PlatformCore/libpackage/resilience/retry"
 	"github.com/PlatformCore/libpackage/transport/core"
 )
 

@@ -32,17 +32,17 @@ import (
 //	sync.Set("circuit:user-service", circuitState)
 //	val, ok := sync.Get("circuit:user-service")
 type StateSynchronizer struct {
-	cfg      StateSyncConfig
-	nodeID   string
-	clock    *hybridLogicalClock
-	state    map[string]*SyncEntry
-	mu       sync.RWMutex
-	stopCh   chan struct{}
-	metrics  *syncMetrics
-	digest   *merkleDigest
-	peers    []SyncPeer
-	peerMu   sync.RWMutex
-	started  int32
+	cfg     StateSyncConfig
+	nodeID  string
+	clock   *hybridLogicalClock
+	state   map[string]*SyncEntry
+	mu      sync.RWMutex
+	stopCh  chan struct{}
+	metrics *syncMetrics
+	digest  *merkleDigest
+	peers   []SyncPeer
+	peerMu  sync.RWMutex
+	started int32
 }
 
 // SyncEntry is a versioned key-value pair in the replicated state.
@@ -50,7 +50,7 @@ type SyncEntry struct {
 	Key       string
 	Value     any
 	Version   HLCTimestamp
-	NodeID    string    // originating node
+	NodeID    string        // originating node
 	DeletedAt *HLCTimestamp // non-nil if tombstoned
 }
 

@@ -177,10 +177,10 @@ func ParseSpanID(s string) (SpanID, error) {
 
 // TraceParent represents the W3C traceparent header.
 type TraceParent struct {
-	Version  byte
-	TraceID  TraceID
-	SpanID   SpanID
-	Sampled  bool
+	Version byte
+	TraceID TraceID
+	SpanID  SpanID
+	Sampled bool
 }
 
 // String serialises to W3C traceparent format: "00-<traceID>-<spanID>-01".

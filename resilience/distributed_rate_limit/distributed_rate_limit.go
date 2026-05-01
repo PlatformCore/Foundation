@@ -152,11 +152,11 @@ func (b *localTokenBucket) adjustRate(ratePerSec float64) {
 }
 
 type drlMetrics struct {
-	allowed     int64
-	denied      int64
-	syncOps     int64
-	syncErrors  int64
-	waitTimeNs  int64
+	allowed    int64
+	denied     int64
+	syncOps    int64
+	syncErrors int64
+	waitTimeNs int64
 }
 
 // NewDistributedRateLimiter creates a new DistributedRateLimiter.
@@ -285,12 +285,12 @@ func (d *DistributedRateLimiter) sync() {
 
 // DRLMetricsSnapshot is a point-in-time snapshot of rate limiter metrics.
 type DRLMetricsSnapshot struct {
-	Allowed      int64
-	Denied       int64
-	SyncOps      int64
-	SyncErrors   int64
-	AvgWaitMs    float64
-	DenyRate     float64
+	Allowed    int64
+	Denied     int64
+	SyncOps    int64
+	SyncErrors int64
+	AvgWaitMs  float64
+	DenyRate   float64
 }
 
 // Metrics returns a snapshot of rate limiter metrics.

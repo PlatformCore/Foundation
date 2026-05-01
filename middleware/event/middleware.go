@@ -362,5 +362,3 @@ func InstrumentedPublisher(tracer *obttrace.Tracer, log *zap.Logger, publish Pub
 		return err
 	}
 }
-
-

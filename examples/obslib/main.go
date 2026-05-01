@@ -17,14 +17,14 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 
-	"github.com/PlatformCore/libpackage/middleware/ids"
 	"github.com/PlatformCore/libpackage/middleware/event"
-	obshttp "github.com/PlatformCore/libpackage/middleware/obshttp"
+	"github.com/PlatformCore/libpackage/middleware/ids"
 	obsgrpc "github.com/PlatformCore/libpackage/middleware/obsgrpc"
+	obshttp "github.com/PlatformCore/libpackage/middleware/http"
 	"github.com/PlatformCore/libpackage/middleware/propagation"
 	"github.com/PlatformCore/libpackage/middleware/registry"
-	"github.com/PlatformCore/libpackage/observability/telemetry/provider"
 	obttrace "github.com/PlatformCore/libpackage/middleware/trace"
+	"github.com/PlatformCore/libpackage/observability/telemetry/provider"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-package goevaluator
+package evaluator
 
 import "hash/fnv"
 

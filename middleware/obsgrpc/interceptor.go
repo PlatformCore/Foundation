@@ -69,12 +69,12 @@ type InterceptorConfig struct {
 // ─── Unary Server Interceptor ────────────────────────────────────────────────
 
 // UnaryServerInterceptor returns a gRPC unary server interceptor that:
-//   1. Extracts obslib IDs from incoming gRPC metadata.
-//   2. Starts an enterprise span for the call.
-//   3. Emits Prometheus metrics.
-//   4. Writes a structured log line.
-//   5. Recovers from panics.
-//   6. Injects response IDs into trailing metadata.
+//  1. Extracts obslib IDs from incoming gRPC metadata.
+//  2. Starts an enterprise span for the call.
+//  3. Emits Prometheus metrics.
+//  4. Writes a structured log line.
+//  5. Recovers from panics.
+//  6. Injects response IDs into trailing metadata.
 func UnaryServerInterceptor(cfg InterceptorConfig) grpc.UnaryServerInterceptor {
 	skipSet := makeSkipSet(cfg.SkipMethods)
 
